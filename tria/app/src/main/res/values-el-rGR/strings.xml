@@ -1,0 +1,123 @@
+<?xml version="1.0" encoding="utf-8"?>
+<resources>
+    <string name="add_name">Ονοματεπώνυμο</string>
+    <string name="add_New_Contact">Εισαγωγή νέων στοιχέίων</string>
+    <string name="add_number">Αριθμός Τηλεφωνίας</string>
+    <string name="add_region">Περιοχή</string>
+    <string name="add_year">Ημερολογιακό Έτος</string>
+    <string name="age">Ηλικία κτηνοτρόφου</string>
+    <string name="annual_costs">ΕΤΗΣΙΑ ΕΞΟΔΑ</string>
+    <string name="annual_revenue">ΕΤΗΣΙΑ ΕΣΟΔΑ</string>
+    <string name="BASIC_UNIT_DATA">ΒΑΣΙΚΑ ΣΤΟΙΧΕΙΑ ΜΟΝΑΔΟΣ</string>
+    <string name="black">Μάυρα €</string>
+    <string name="bn_basic">Εισαγωγή Βασικών στοιχείων</string>
+    <string name="bn_economic">Εισαγωγη Οικονομικών στοιχείων</string>
+    <string name="comment">Παρατηρήσεις</string>
+    <string name="concentrated_fodder">"Συμπυκνωμένες ζωοτροφές € "</string>
+    <string name="edit">Επεξεργασία</string>
+    <string name="electricity">Ρεύμα €</string>
+    <string name="electrification">Ηλεκτροδότηση Ναί ή Όχι</string>
+    <string name="equipment">Αναλώσιμα αρμεκτηρίου,Εξοπλισμός €</string>
+    <string name="EXPENSES_PASTURES">Λοιπά έξοδα (βοσκές) €</string>
+    <string name="female">Γεννήτορες €</string>
+    <string name="financial_data">Οικονομικά Δεδομένα</string>
+    <string name="goatmilk">Γίδινο γάλα ετησίως (λίτρα)</string>
+    <string name="goats">Αρμεγόμενα γίδια, Βετούλια, Στέρφα, Τραγιά</string>
+    <string name="hay">Άλλες χονδροειδείς (π.χ. σανά άχυρα κτλ) €</string>
+    <string name="licensing">Αδειοδότηση Ναί ή Όχι</string>
+    <string name="manure">Κοπριά, μαλλί €</string>
+    <string name="medicines">Κτηνιατρικά φάρμακα – Κτηνιατρική περίθαλψη €</string>
+    <string name="milk_per_sheep">Γάλα ανά προβατίνα ετησίως</string>
+    <string name="milking">Ύπαρξη αρμεκτηρίου – Τύπος αρμεκτηρίου</string>
+    <string name="mixed_revenue">ΜΙΚΤΑ ΕΣΟΔΑ</string>
+    <string name="other_expenses">Λοιπά έξοδα (απρόβλεπτα) €</string>
+    <string name="other_income">Άλλα έσοδα €</string>
+    <string name="petrol">Βενζίνες (για μετακίνηση στο μαντρί) €</string>
+    <string name="petroleum">"Πετρέλαιο  (για το τρακτέρ ή την γεννήτρια) € "</string>
+
+    <string name="read_age">Ηλικία κτηνοτρόφου</string>
+    <string name="read_annual_costs" translatable="false">ΕΤΗΣΙΑ ΕΞΟΔΑ</string>
+    <string name="read_annual_revenue">ΕΤΗΣΙΑ ΕΣΟΔΑ</string>
+    <string name="read_basic_unit_data">ΒΑΣΙΚΑ ΣΤΟΙΧΕΙΑ ΜΟΝΑΔΟΣ</string>
+    <string name="read_black">Μάυρα €</string>
+    <string name="read_concentrated_fodder" translatable="false">"Συμπυκνωμένες ζωοτροφές €"</string>
+    <string name="read_electricity">Ρεύμα €</string>
+    <string name="read_electrification">Ηλεκτροδότηση Ναί ή Όχι</string>
+    <string name="read_equipment">Αναλώσιμα αρμεκτηρίου, Eξοπλισμός €</string>
+    <string name="read_EXPENSES_PASTURES">Λοιπά έξοδα (βοσκές) €</string>
+    <string name="read_female">Γεννήτορες €</string>
+    <string name="read_goatmilk">Γίδινο γάλα ετησίως (λίτρα)</string>
+    <string name="read_goats">Αρμεγόμενα γίδια, Βετούλια, Στέρφα, Τραγιά</string>
+    <string name="read_hay">Άλλες χονδροειδείς (π.χ. σανά άχυρα κτλ) €</string>
+    <string name="read_licensing">Αδειοδότηση Ναί ή Όχι</string>
+    <string name="read_manure">Κοπριά, μαλλί €</string>
+    <string name="read_medicines">Κτηνιατρικά φάρμακα – Κτηνιατρική περίθαλψη €</string>
+    <string name="read_milk_per_sheep">Γάλα ανά προβατίνα ετησίως</string>
+    <string name="read_milking">Ύπαρξη αρμεκτηρίου – Τύπος αρμεκτηρίου</string>
+    <string name="read_mixed_revenue">ΜΙΚΤΑ ΕΣΟΔΑ</string>
+    <string name="read_name">Ονοματεπώνυμο</string>
+    <string name="read_number">Αριθμός Τηλεφωνίας</string>
+    <string name="read_other_expenses">Λοιπά έξοδα (απρόβλεπτα) €</string>
+    <string name="read_other_income" translatable="false">Άλλα έσοδα</string>
+    <string name="read_petrol">Βενζίνες €</string>
+    <string name="read_petroleum">"Πετρέλαιο  €"</string>
+    <string name="read_region">Περιοχή</string>
+    <string name="read_repair">Επισκευές €</string>
+    <string name="read_replacement_animals">Ζώα αντικατάστασης €</string>
+    <string name="read_selling_goat_milk">"Πώληση γάλακτος (γίδινο) €"</string>
+    <string name="read_selling_meat">Πώληση Κρέατος €</string>
+    <string name="read_selling_sheep_milk">Πώληση γάλακτος (πρόβειου) €</string>
+    <string name="read_sheep">Αρμεγόμενα πρόβατα, Ζυγούρια, Στέρφα, Κριάρια</string>
+    <string name="read_sheepmilk">πρόβειο γάλα ετησίως (λίτρα)</string>
+    <string name="read_sponges">Σφουγγάρια €</string>
+    <string name="read_subsidies">"Επιδοτήσεις €"</string>
+    <string name="read_total_animals">"Αριθμός ζώων (συνολικά) "</string>
+    <string name="read_total_expenses">ΣΥΝΟΛΟ ΕΞΟΔΩΝ</string>
+    <string name="read_total_revenue">ΣΥΝΟΛΟ ΕΣΟΔΩΝ</string>
+    <string name="read_tractor">Μικρό τρακτέρ</string>
+    <string name="read_trefoil">"Τριφύλλι €"</string>
+    <string name="read_WAGES_FIELDS">"Μεροκάματα (π.χ. για χωράφια) € "</string>
+    <string name="read_WAGES_STAFF">Μισθοί (π.χ. για φύλακα των ζωών) €</string>
+    <string name="read_year">Ημερολογιακό Έτος</string>
+    <string name="repair">Επισκευές €</string>
+    <string name="replacement_animals">Ζώα αντικατάστασης € </string>
+    <string name="select_year">Έτος</string>
+    <string name="selling_goat_milk">"Πώληση γάλακτος (γίδινο) €"</string>
+    <string name="selling_meat">Πώληση Κρέατος €</string>
+    <string name="selling_sheep_milk">Πώληση γάλακτος (πρόβειου) €</string>
+    <string name="sheep">Αρμεγόμενα πρόβατα, Ζυγούρια, Στέρφα, Κριάρια</string>
+    <string name="sheepmilk">Πρόβειο γάλα ετησίως (λίτρα)</string>
+    <string name="sponges">Σφουγγάρια €</string>
+    <string name="subsidies">Επιδοτήσεις €</string>
+    <string name="total_animals">"Αριθμός ζώων (συνολικά) "</string>
+    <string name="total_expenses">ΣΥΝΟΛΟ ΕΞΟΔΩΝ</string>
+    <string name="total_revenue">ΣΥΝΟΛΟ ΕΣΟΔΩΝ</string>
+    <string name="tractor">Ύπαρξη τρακτέρ Ναι ή Όχι</string>
+    <string name="trefoil">"Τριφύλλι € "</string>
+    <string name="WAGES_STAFF">Μισθοί (π.χ. για φύλακα των ζωών) €</string>
+    <string name="WAGES_FIELDS">"Μεροκάματα (π.χ. για χωράφια) € "</string>
+    <string name="add">Εισαγωγή</string>
+    <string name="delete">Διαγραφή</string>
+    <string name="bn_save" translatable="false">Αποθήκευση</string>
+    <string name="view">Αναζήτηση</string>
+    <string name="bn_clear">Καθαρισμός</string>
+
+    <string name="UNIT_DATA">ΣΤΟΙΧΕΙΑ ΜΟΝΑΔAΣ</string>
+    <string name="PHONEBOOK">Επαφές</string>
+
+
+
+
+    <string name="press_telephone_number">Εισαγωγή Τηλ. Αριθμού</string>
+    <string name="press_year">Εισαγωγή Έτους</string>
+    <string name="delete_entry">Να διαγραφεί η καταχώρηση;</string>
+    <string name="yes">Ναι</string>
+    <string name="no">Οχι</string>
+    <string name="contacts">Επαφές</string>
+    <string name="diagram">Διαγράμματα</string>
+
+
+
+
+
+</resources>

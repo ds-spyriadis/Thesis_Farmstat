@@ -1,0 +1,486 @@
+<?xml version="1.0" encoding="utf-8"?>
+<android.support.constraint.ConstraintLayout xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:background="#F5DEB3">
+
+    <TextView
+        android:id="@+id/basic_text"
+        android:layout_width="400dp"
+        android:layout_height="50dp"
+        android:layout_marginStart="8dp"
+        android:layout_marginTop="70dp"
+        android:layout_marginEnd="8dp"
+        android:text="@string/BASIC_UNIT_DATA"
+        android:textAlignment="center"
+        android:textSize="40sp"
+        android:textStyle="bold"
+        app:layout_constraintBottom_toTopOf="@+id/nestedScrollView2"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintHorizontal_bias="0.497"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toTopOf="parent" />
+
+
+    <android.support.v4.widget.NestedScrollView xmlns:android="http://schemas.android.com/apk/res/android"
+        xmlns:app="http://schemas.android.com/apk/res-auto"
+        xmlns:tools="http://schemas.android.com/tools"
+        android:id="@+id/nestedScrollView2"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_marginTop="20dp"
+        android:scrollbars="none"
+        app:layout_constraintBottom_toBottomOf="parent"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toBottomOf="@+id/basic_text">
+
+
+        <HorizontalScrollView
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:scrollbars="none">
+
+
+            <android.support.constraint.ConstraintLayout xmlns:app="http://schemas.android.com/apk/res-auto"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                tools:context=".BasicActivity">
+
+                <!-- TODO: Update blank fragment layout -->
+
+
+                <TextView
+                    android:id="@+id/txt_age0"
+                    android:layout_width="250dp"
+                    android:layout_height="50dp"
+                    android:layout_marginStart="10dp"
+                    android:layout_marginTop="16dp"
+                    android:layout_marginEnd="8dp"
+                    android:background="#D2B48C"
+                    android:ems="10"
+                    android:text="@string/age"
+                    android:textSize="14sp"
+
+                    app:layout_constraintEnd_toEndOf="parent"
+                    app:layout_constraintHorizontal_bias="0.024"
+                    app:layout_constraintStart_toStartOf="parent"
+                    app:layout_constraintTop_toTopOf="parent"
+                    tools:ignore="RtlCompat,UnknownId" />
+
+                <TextView
+                    android:id="@+id/txt_animal0"
+                    android:layout_width="250dp"
+                    android:layout_height="50dp"
+                    android:layout_marginStart="40dp"
+                    android:layout_marginTop="16dp"
+                    android:layout_marginEnd="8dp"
+                    android:background="#D2B48C"
+                    android:ems="10"
+                    android:text="@string/total_animals"
+                    android:textSize="14sp"
+
+                    app:layout_constraintEnd_toEndOf="parent"
+                    app:layout_constraintHorizontal_bias="0.0"
+                    app:layout_constraintStart_toEndOf="@+id/txt_age0"
+                    app:layout_constraintTop_toTopOf="parent"
+                    tools:ignore="UnknownId" />
+
+
+                <TextView
+                    android:id="@+id/txt_sheep0"
+                    android:layout_width="450dp"
+                    android:layout_height="50dp"
+                    android:layout_marginStart="10dp"
+                    android:layout_marginTop="12dp"
+                    android:layout_marginEnd="8dp"
+                    android:background="#D2B48C"
+                    android:ems="10"
+                    android:text="@string/sheep"
+                    android:textSize="14sp"
+                    app:layout_constraintEnd_toEndOf="parent"
+                    app:layout_constraintHorizontal_bias="0.072"
+                    app:layout_constraintStart_toStartOf="parent"
+                    app:layout_constraintTop_toBottomOf="@+id/txt_age"
+                    tools:ignore="UnknownId" />
+
+
+                <TextView
+                    android:id="@+id/txt_goat0"
+                    android:layout_width="450dp"
+                    android:layout_height="50dp"
+                    android:layout_marginStart="10dp"
+                    android:layout_marginTop="12dp"
+                    android:layout_marginEnd="8dp"
+                    android:background="#D2B48C"
+                    android:ems="10"
+                    android:text="@string/goats"
+                    android:textSize="14sp"
+                    app:layout_constraintEnd_toEndOf="parent"
+                    app:layout_constraintHorizontal_bias="0.072"
+                    app:layout_constraintStart_toStartOf="parent"
+                    app:layout_constraintTop_toBottomOf="@+id/txt_sheep"
+                    tools:ignore="UnknownId" />
+
+
+                <TextView
+                    android:id="@+id/txt_milking0"
+                    android:layout_width="250dp"
+                    android:layout_height="50dp"
+                    android:layout_marginStart="10dp"
+                    android:layout_marginTop="20dp"
+                    android:layout_marginEnd="8dp"
+                    android:background="#D2B48C"
+                    android:ems="10"
+                    android:text="@string/milking"
+                    android:textSize="14sp"
+
+                    app:layout_constraintEnd_toEndOf="parent"
+                    app:layout_constraintHorizontal_bias="0.023"
+                    app:layout_constraintStart_toStartOf="parent"
+                    app:layout_constraintTop_toBottomOf="@+id/txt_goat"
+                    tools:ignore="UnknownId" />
+
+
+                <TextView
+                    android:id="@+id/txt_licensing0"
+                    android:layout_width="250dp"
+                    android:layout_height="50dp"
+                    android:layout_marginStart="40dp"
+                    android:layout_marginTop="20dp"
+                    android:layout_marginEnd="8dp"
+                    android:background="#D2B48C"
+                    android:ems="10"
+                    android:text="@string/licensing"
+                    android:textSize="14sp"
+
+                    app:layout_constraintEnd_toEndOf="parent"
+                    app:layout_constraintHorizontal_bias="0.0"
+                    app:layout_constraintStart_toEndOf="@+id/txt_milking"
+                    app:layout_constraintTop_toBottomOf="@+id/txt_goat"
+                    tools:ignore="UnknownId" />
+
+
+                <TextView
+                    android:id="@+id/txt_electrification0"
+                    android:layout_width="250dp"
+                    android:layout_height="50dp"
+                    android:layout_marginStart="10dp"
+                    android:layout_marginTop="20dp"
+                    android:layout_marginEnd="8dp"
+                    android:background="#D2B48C"
+                    android:ems="10"
+                    android:text="@string/electrification"
+                    android:textSize="14sp"
+
+                    app:layout_constraintEnd_toEndOf="parent"
+                    app:layout_constraintHorizontal_bias="0.024"
+                    app:layout_constraintStart_toStartOf="parent"
+                    app:layout_constraintTop_toBottomOf="@+id/txt_milking"
+                    tools:ignore="UnknownId" />
+
+
+                <TextView
+                    android:id="@+id/txt_tractor0"
+                    android:layout_width="250dp"
+                    android:layout_height="50dp"
+                    android:layout_marginStart="40dp"
+                    android:layout_marginTop="20dp"
+                    android:layout_marginEnd="8dp"
+                    android:background="#D2B48C"
+                    android:ems="10"
+                    android:text="@string/tractor"
+                    android:textSize="14sp"
+
+                    app:layout_constraintEnd_toEndOf="parent"
+                    app:layout_constraintHorizontal_bias="0.033"
+                    app:layout_constraintStart_toEndOf="@+id/txt_electrification"
+                    app:layout_constraintTop_toBottomOf="@+id/txt_licensing"
+                    tools:ignore="UnknownId" />
+
+
+                <TextView
+                    android:id="@+id/txt_sheepmilk0"
+                    android:layout_width="250dp"
+                    android:layout_height="50dp"
+                    android:layout_marginStart="10dp"
+                    android:layout_marginTop="20dp"
+                    android:layout_marginEnd="8dp"
+                    android:background="#D2B48C"
+                    android:ems="10"
+                    android:text="@string/sheepmilk"
+                    android:textSize="14sp"
+
+                    app:layout_constraintEnd_toEndOf="parent"
+                    app:layout_constraintHorizontal_bias="0.023"
+                    app:layout_constraintStart_toStartOf="parent"
+                    app:layout_constraintTop_toBottomOf="@+id/txt_electrification"
+                    tools:ignore="UnknownId" />
+
+
+                <TextView
+                    android:id="@+id/txt_goatmilk0"
+                    android:layout_width="250dp"
+                    android:layout_height="50dp"
+                    android:layout_marginStart="40dp"
+                    android:layout_marginTop="20dp"
+                    android:layout_marginEnd="8dp"
+                    android:background="#D2B48C"
+                    android:ems="10"
+                    android:text="@string/goatmilk"
+                    android:textSize="14sp"
+
+                    app:layout_constraintEnd_toEndOf="parent"
+                    app:layout_constraintHorizontal_bias="1.0"
+                    app:layout_constraintStart_toEndOf="@+id/txt_sheepmilk"
+                    app:layout_constraintTop_toBottomOf="@+id/txt_tractor"
+                    tools:ignore="UnknownId" />
+
+                <TextView
+                    android:id="@+id/txt_comment0"
+                    android:layout_width="500dp"
+                    android:layout_height="50dp"
+                    android:layout_marginStart="10dp"
+                    android:layout_marginTop="20dp"
+                    android:layout_marginEnd="20dp"
+                    android:background="#D2B48C"
+                    android:ems="10"
+                    android:text="@string/comment"
+
+                    android:textSize="14sp"
+                    app:layout_constraintEnd_toEndOf="parent"
+                    app:layout_constraintHorizontal_bias="0.2"
+                    app:layout_constraintStart_toStartOf="parent"
+                    app:layout_constraintTop_toBottomOf="@+id/txt_sheepmilk"
+                    tools:ignore="UnknownId" />
+
+
+                <EditText
+                    android:id="@+id/txt_age"
+                    android:layout_width="250dp"
+                    android:layout_height="50dp"
+                    android:layout_marginStart="10dp"
+                    android:layout_marginTop="8dp"
+                    android:layout_marginEnd="8dp"
+                    android:background="#D2B48C"
+                    android:ems="10"
+                    android:inputType="number"
+                    android:textSize="14sp"
+
+                    app:layout_constraintEnd_toEndOf="parent"
+                    app:layout_constraintHorizontal_bias="0.024"
+                    app:layout_constraintStart_toStartOf="parent"
+                    app:layout_constraintTop_toBottomOf="@+id/txt_age0"
+                    tools:ignore="RtlCompat,UnknownId" />
+
+                <EditText
+                    android:id="@+id/txt_animal"
+                    android:layout_width="250dp"
+                    android:layout_height="50dp"
+                    android:layout_marginStart="40dp"
+                    android:layout_marginTop="8dp"
+                    android:layout_marginEnd="8dp"
+                    android:background="#D2B48C"
+                    android:ems="10"
+                    android:inputType="number"
+                    android:textSize="14sp"
+
+                    app:layout_constraintEnd_toEndOf="parent"
+                    app:layout_constraintHorizontal_bias="0.0"
+                    app:layout_constraintStart_toEndOf="@+id/txt_age"
+                    app:layout_constraintTop_toBottomOf="@+id/txt_animal0"
+                    tools:ignore="UnknownId" />
+
+
+                <EditText
+                    android:id="@+id/txt_sheep"
+                    android:layout_width="450dp"
+                    android:layout_height="50dp"
+                    android:layout_marginStart="10dp"
+                    android:layout_marginTop="8dp"
+                    android:layout_marginEnd="8dp"
+                    android:background="#D2B48C"
+                    android:ems="10"
+                    android:inputType="number"
+                    android:textSize="14sp"
+                    app:layout_constraintEnd_toEndOf="parent"
+                    app:layout_constraintHorizontal_bias="0.072"
+                    app:layout_constraintStart_toStartOf="parent"
+                    app:layout_constraintTop_toBottomOf="@+id/txt_sheep0"
+                    tools:ignore="UnknownId" />
+
+
+                <EditText
+                    android:id="@+id/txt_goat"
+                    android:layout_width="450dp"
+                    android:layout_height="50dp"
+                    android:layout_marginStart="10dp"
+                    android:layout_marginTop="8dp"
+                    android:layout_marginEnd="8dp"
+                    android:background="#D2B48C"
+                    android:ems="10"
+                    android:inputType="number"
+                    android:textSize="14sp"
+                    app:layout_constraintEnd_toEndOf="parent"
+                    app:layout_constraintHorizontal_bias="0.072"
+                    app:layout_constraintStart_toStartOf="parent"
+                    app:layout_constraintTop_toBottomOf="@+id/txt_goat0"
+                    tools:ignore="UnknownId" />
+
+
+                <EditText
+                    android:id="@+id/txt_milking"
+                    android:layout_width="250dp"
+                    android:layout_height="50dp"
+                    android:layout_marginStart="10dp"
+                    android:layout_marginTop="8dp"
+                    android:layout_marginEnd="8dp"
+                    android:background="#D2B48C"
+                    android:ems="10"
+                    android:inputType="text"
+                    android:textSize="14sp"
+
+                    app:layout_constraintEnd_toEndOf="parent"
+                    app:layout_constraintHorizontal_bias="0.023"
+                    app:layout_constraintStart_toStartOf="parent"
+                    app:layout_constraintTop_toBottomOf="@+id/txt_milking0"
+                    tools:ignore="UnknownId" />
+
+
+                <EditText
+                    android:id="@+id/txt_licensing"
+                    android:layout_width="250dp"
+                    android:layout_height="50dp"
+                    android:layout_marginStart="40dp"
+                    android:layout_marginTop="8dp"
+                    android:layout_marginEnd="8dp"
+                    android:background="#D2B48C"
+                    android:ems="10"
+                    android:inputType="text"
+                    android:textSize="14sp"
+
+                    app:layout_constraintEnd_toEndOf="parent"
+                    app:layout_constraintHorizontal_bias="0.0"
+                    app:layout_constraintStart_toEndOf="@+id/txt_milking"
+                    app:layout_constraintTop_toBottomOf="@+id/txt_licensing0"
+                    tools:ignore="UnknownId" />
+
+
+                <EditText
+                    android:id="@+id/txt_electrification"
+                    android:layout_width="250dp"
+                    android:layout_height="50dp"
+                    android:layout_marginStart="10dp"
+                    android:layout_marginTop="8dp"
+                    android:layout_marginEnd="8dp"
+                    android:background="#D2B48C"
+                    android:ems="10"
+                    android:inputType="text"
+                    android:textSize="14sp"
+
+                    app:layout_constraintEnd_toEndOf="parent"
+                    app:layout_constraintHorizontal_bias="0.024"
+                    app:layout_constraintStart_toStartOf="parent"
+                    app:layout_constraintTop_toBottomOf="@+id/txt_electrification0"
+                    tools:ignore="UnknownId" />
+
+
+                <EditText
+                    android:id="@+id/txt_tractor"
+                    android:layout_width="250dp"
+                    android:layout_height="50dp"
+                    android:layout_marginStart="40dp"
+                    android:layout_marginTop="8dp"
+                    android:layout_marginEnd="8dp"
+                    android:background="#D2B48C"
+                    android:ems="10"
+                    android:inputType="text"
+                    android:textSize="14sp"
+
+                    app:layout_constraintEnd_toEndOf="parent"
+                    app:layout_constraintHorizontal_bias="0.033"
+                    app:layout_constraintStart_toEndOf="@+id/txt_electrification"
+                    app:layout_constraintTop_toBottomOf="@+id/txt_tractor0"
+                    tools:ignore="UnknownId" />
+
+
+                <EditText
+                    android:id="@+id/txt_sheepmilk"
+                    android:layout_width="250dp"
+                    android:layout_height="50dp"
+                    android:layout_marginStart="10dp"
+                    android:layout_marginTop="20dp"
+                    android:layout_marginEnd="8dp"
+                    android:background="#D2B48C"
+                    android:ems="10"
+                    android:inputType="number"
+                    android:textSize="14sp"
+
+                    app:layout_constraintEnd_toEndOf="parent"
+                    app:layout_constraintHorizontal_bias="0.023"
+                    app:layout_constraintStart_toStartOf="parent"
+                    app:layout_constraintTop_toBottomOf="@+id/txt_sheepmilk0"
+                    tools:ignore="UnknownId" />
+
+
+                <EditText
+                    android:id="@+id/txt_goatmilk"
+                    android:layout_width="250dp"
+                    android:layout_height="50dp"
+                    android:layout_marginStart="40dp"
+                    android:layout_marginTop="20dp"
+                    android:layout_marginEnd="8dp"
+                    android:background="#D2B48C"
+                    android:ems="10"
+                    android:inputType="number"
+                    android:textSize="14sp"
+
+                    app:layout_constraintEnd_toEndOf="parent"
+                    app:layout_constraintHorizontal_bias="1.0"
+                    app:layout_constraintStart_toEndOf="@+id/txt_sheepmilk"
+                    app:layout_constraintTop_toBottomOf="@+id/txt_goatmilk0"
+                    tools:ignore="UnknownId" />
+
+                <EditText
+                    android:id="@+id/txt_comment"
+                    android:layout_width="500dp"
+                    android:layout_height="0dp"
+                    android:layout_marginStart="10dp"
+                    android:layout_marginTop="8dp"
+                    android:layout_marginEnd="8dp"
+                    android:background="#D2B48C"
+                    android:ems="10"
+
+                    android:inputType="textMultiLine"
+                    android:textSize="14sp"
+                    app:layout_constraintEnd_toEndOf="parent"
+                    app:layout_constraintHorizontal_bias="0.148"
+                    app:layout_constraintStart_toStartOf="parent"
+                    app:layout_constraintTop_toBottomOf="@+id/txt_comment0"
+                    tools:ignore="UnknownId" />
+
+
+                <Button
+                    android:id="@+id/bn_save1"
+                    android:layout_width="350dp"
+                    android:layout_height="50dp"
+                    android:layout_marginStart="20dp"
+                    android:layout_marginTop="28dp"
+                    android:layout_marginEnd="8dp"
+                    android:layout_marginBottom="80dp"
+                    android:background="@color/BurlyWood"
+                    android:text="@string/bn_save"
+                    app:layout_constraintBottom_toBottomOf="parent"
+                    app:layout_constraintEnd_toEndOf="parent"
+                    app:layout_constraintHorizontal_bias="0.543"
+                    app:layout_constraintStart_toStartOf="parent"
+                    app:layout_constraintTop_toBottomOf="@+id/txt_comment"
+                    tools:ignore="UnknownId" />
+
+            </android.support.constraint.ConstraintLayout>
+
+        </HorizontalScrollView>
+    </android.support.v4.widget.NestedScrollView>
+</android.support.constraint.ConstraintLayout>

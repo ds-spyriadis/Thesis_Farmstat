@@ -1,0 +1,261 @@
+<?xml version="1.0" encoding="utf-8"?>
+<android.support.constraint.ConstraintLayout xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:background="#F5DEB3"
+    android:orientation="vertical"
+    tools:context=".AddActivity">
+
+
+    <android.support.v4.widget.NestedScrollView xmlns:android="http://schemas.android.com/apk/res/android"
+        xmlns:app="http://schemas.android.com/apk/res-auto"
+        xmlns:tools="http://schemas.android.com/tools"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_marginStart="8dp"
+        android:layout_marginTop="8dp"
+        android:layout_marginEnd="8dp"
+        android:layout_marginBottom="8dp"
+        android:scrollbars="none"
+        app:layout_constraintBottom_toBottomOf="parent"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toTopOf="parent">
+
+
+        <HorizontalScrollView
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:scrollbars="none">
+
+
+            <android.support.constraint.ConstraintLayout xmlns:app="http://schemas.android.com/apk/res-auto"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                >
+
+                <!-- TODO: Update blank fragment layout -->
+
+
+                <TextView
+                    android:id="@+id/txt_add_elements"
+                    android:layout_width="500dp"
+                    android:layout_height="80dp"
+                    android:layout_marginStart="8dp"
+                    android:layout_marginTop="20dp"
+                    android:layout_marginEnd="8dp"
+                    android:background="#D2B48C"
+                    android:text="@string/add_New_Contact"
+                    android:textAlignment="center"
+                    android:textSize="30sp"
+                    android:textStyle="bold"
+                    app:layout_constraintEnd_toEndOf="parent"
+                    app:layout_constraintStart_toStartOf="parent"
+                    app:layout_constraintTop_toTopOf="parent"
+                    tools:ignore="RtlCompat,UnknownId" />
+
+
+                <TextView
+                    android:id="@+id/txt_name0"
+                    android:layout_width="350dp"
+                    android:layout_height="40dp"
+                    android:layout_marginStart="8dp"
+                    android:layout_marginTop="32dp"
+                    android:layout_marginEnd="8dp"
+                    android:background="#D2B48C"
+                    android:ems="10"
+                    android:textSize="22sp"
+
+                    android:text="@string/add_name"
+                    app:layout_constraintEnd_toEndOf="parent"
+                    app:layout_constraintStart_toStartOf="parent"
+                    app:layout_constraintTop_toBottomOf="@+id/txt_add_elements"
+                    tools:ignore="UnknownId" />
+
+
+                <EditText
+                    android:id="@+id/txt_name"
+                    android:layout_width="350dp"
+                    android:layout_height="40dp"
+                    android:layout_marginStart="8dp"
+                    android:layout_marginTop="8dp"
+                    android:layout_marginEnd="8dp"
+                    android:background="#D2B48C"
+                    android:ems="10"
+                    android:inputType="text"
+                    app:layout_constraintEnd_toEndOf="parent"
+                    app:layout_constraintStart_toStartOf="parent"
+                    app:layout_constraintTop_toBottomOf="@+id/txt_name0"
+                    tools:ignore="UnknownId" />
+
+
+                <TextView
+                    android:id="@+id/txt_region0"
+                    android:layout_width="350dp"
+                    android:layout_height="40dp"
+                    android:layout_marginStart="8dp"
+                    android:layout_marginTop="24dp"
+                    android:layout_marginEnd="8dp"
+                    android:background="#D2B48C"
+                    android:ems="10"
+                    android:textSize="22sp"
+
+                    android:text="@string/add_region"
+                    app:layout_constraintEnd_toEndOf="parent"
+                    app:layout_constraintStart_toStartOf="parent"
+                    app:layout_constraintTop_toBottomOf="@+id/txt_name"
+                    tools:ignore="UnknownId" />
+
+                <EditText
+                    android:id="@+id/txt_region"
+                    android:layout_width="350dp"
+                    android:layout_height="40dp"
+                    android:layout_marginStart="8dp"
+                    android:layout_marginTop="8dp"
+                    android:layout_marginEnd="8dp"
+                    android:background="#D2B48C"
+                    android:ems="10"
+                    android:inputType="text"
+                    app:layout_constraintEnd_toEndOf="parent"
+                    app:layout_constraintStart_toStartOf="parent"
+                    app:layout_constraintTop_toBottomOf="@+id/txt_region0"
+                    tools:ignore="UnknownId" />
+
+
+                <TextView
+                    android:id="@+id/txt_tel0"
+                    android:layout_width="350dp"
+                    android:layout_height="40dp"
+                    android:layout_marginStart="8dp"
+                    android:layout_marginTop="8dp"
+                    android:layout_marginEnd="8dp"
+                    android:background="#D2B48C"
+                    android:ems="10"
+                    android:textSize="22sp"
+
+                    android:text="@string/add_number"
+                    app:layout_constraintEnd_toEndOf="parent"
+                    app:layout_constraintStart_toStartOf="parent"
+                    app:layout_constraintTop_toBottomOf="@+id/txt_region"
+                    tools:ignore="UnknownId" />
+
+                <EditText
+                    android:id="@+id/txt_tel"
+                    android:layout_width="350dp"
+                    android:layout_height="40dp"
+                    android:layout_marginStart="8dp"
+                    android:layout_marginTop="8dp"
+                    android:layout_marginEnd="8dp"
+                    android:background="#D2B48C"
+
+                    android:ems="10"
+                    android:inputType="number"
+                    app:layout_constraintEnd_toEndOf="parent"
+                    app:layout_constraintStart_toStartOf="parent"
+                    app:layout_constraintTop_toBottomOf="@+id/txt_tel0"
+                    tools:ignore="UnknownId" />
+
+                <TextView
+                    android:id="@+id/txt_year0"
+                    android:layout_width="350dp"
+                    android:layout_height="40dp"
+                    android:layout_marginStart="8dp"
+                    android:layout_marginTop="24dp"
+
+                    android:layout_marginEnd="8dp"
+                    android:background="#D2B48C"
+                    android:ems="10"
+                    android:textSize="22sp"
+
+                    android:text="@string/add_year"
+                    app:layout_constraintEnd_toEndOf="parent"
+                    app:layout_constraintStart_toStartOf="parent"
+                    app:layout_constraintTop_toBottomOf="@+id/txt_tel"
+                    tools:ignore="UnknownId" />
+
+
+                <EditText
+                    android:id="@+id/txt_year"
+                    android:layout_width="350dp"
+                    android:layout_height="40dp"
+                    android:layout_marginStart="8dp"
+                    android:layout_marginTop="8dp"
+
+                    android:layout_marginEnd="8dp"
+                    android:background="#D2B48C"
+                    android:ems="10"
+                    android:inputType="number"
+                    app:layout_constraintEnd_toEndOf="parent"
+                    app:layout_constraintStart_toStartOf="parent"
+                    app:layout_constraintTop_toBottomOf="@+id/txt_year0"
+                    tools:ignore="UnknownId" />
+
+
+                <Button
+                    android:id="@+id/bn_save"
+                    android:layout_width="250dp"
+                    android:layout_height="60dp"
+                    android:layout_marginStart="8dp"
+                    android:layout_marginTop="28dp"
+                    android:layout_marginEnd="8dp"
+                    android:background="@color/BurlyWood"
+                    android:text="@string/bn_save"
+                    app:layout_constraintEnd_toEndOf="parent"
+                    app:layout_constraintHorizontal_bias="0.033"
+                    app:layout_constraintStart_toStartOf="parent"
+                    app:layout_constraintTop_toBottomOf="@+id/txt_year"
+                    tools:ignore="UnknownId" />
+
+
+                <Button
+                    android:id="@+id/bn_clear"
+                    android:layout_width="250dp"
+                    android:layout_height="60dp"
+                    android:layout_marginStart="8dp"
+                    android:layout_marginTop="28dp"
+                    android:layout_marginEnd="8dp"
+                    android:background="@color/BurlyWood"
+                    android:text="@string/bn_clear"
+                    app:layout_constraintEnd_toEndOf="parent"
+                    app:layout_constraintHorizontal_bias="1.0"
+                    app:layout_constraintStart_toEndOf="@+id/bn_save"
+                    app:layout_constraintTop_toBottomOf="@+id/txt_year"
+                    tools:ignore="UnknownId" />
+
+
+                <Button
+                    android:id="@+id/bn_basic"
+                    android:layout_width="400dp"
+                    android:layout_height="60dp"
+                    android:layout_marginStart="8dp"
+                    android:layout_marginTop="24dp"
+                    android:layout_marginEnd="8dp"
+                    android:background="@color/BurlyWood"
+                    android:text="@string/bn_basic"
+                    app:layout_constraintEnd_toEndOf="parent"
+                    app:layout_constraintStart_toStartOf="parent"
+                    app:layout_constraintTop_toBottomOf="@+id/bn_clear"
+                    tools:ignore="UnknownId" />
+
+
+                <Button
+                    android:id="@+id/bn_economic"
+                    android:layout_width="400dp"
+                    android:layout_height="60dp"
+                    android:layout_marginStart="8dp"
+                    android:layout_marginTop="12dp"
+                    android:layout_marginEnd="8dp"
+                    android:background="@color/BurlyWood"
+                    android:text="@string/bn_economic"
+                    app:layout_constraintEnd_toEndOf="parent"
+                    app:layout_constraintStart_toStartOf="parent"
+                    app:layout_constraintTop_toBottomOf="@+id/bn_basic"
+                    tools:ignore="UnknownId" />
+
+
+            </android.support.constraint.ConstraintLayout>
+        </HorizontalScrollView>
+    </android.support.v4.widget.NestedScrollView>
+</android.support.constraint.ConstraintLayout>

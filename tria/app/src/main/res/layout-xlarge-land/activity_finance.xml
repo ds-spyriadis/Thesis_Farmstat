@@ -1,0 +1,864 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:background="#F5DEB3"
+    android:orientation="vertical">
+
+    <android.support.constraint.ConstraintLayout xmlns:app="http://schemas.android.com/apk/res-auto"
+        android:layout_width="match_parent"
+        android:layout_height="50dp">
+
+        <TextView
+            android:id="@+id/financial"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_marginStart="8dp"
+            android:layout_marginTop="8dp"
+            android:layout_marginEnd="8dp"
+            android:text="@string/financial_data"
+            android:textAlignment="center"
+            android:textSize="30sp"
+            android:textStyle="bold"
+            app:layout_constraintEnd_toEndOf="parent"
+            app:layout_constraintHorizontal_bias="0.498"
+            app:layout_constraintStart_toStartOf="parent"
+            app:layout_constraintTop_toTopOf="parent" />
+
+    </android.support.constraint.ConstraintLayout>
+
+
+    <android.support.v4.widget.NestedScrollView xmlns:android="http://schemas.android.com/apk/res/android"
+        xmlns:app="http://schemas.android.com/apk/res-auto"
+        xmlns:tools="http://schemas.android.com/tools"
+        android:layout_width="match_parent"
+        android:layout_height="match_parent"
+        android:background="@color/BurlyWood"
+        android:scrollbars="none">
+
+
+        <HorizontalScrollView
+            android:layout_width="match_parent"
+            android:layout_height="match_parent"
+            android:scrollbars="none">
+
+
+            <android.support.constraint.ConstraintLayout xmlns:app="http://schemas.android.com/apk/res-auto"
+                android:layout_width="match_parent"
+                android:layout_height="match_parent"
+                tools:context=".FinanceActivity">
+
+                <!-- TODO: Update blank fragment layout -->
+
+
+
+
+
+
+
+
+
+                <TextView
+                    android:id="@+id/revenue"
+                    android:layout_width="400dp"
+                    android:layout_height="40dp"
+                    android:layout_marginStart="60dp"
+                    android:layout_marginTop="24dp"
+                    android:text="@string/annual_revenue"
+                    android:textAlignment="center"
+                    android:textSize="30sp"
+                    android:textStyle="bold"
+                    app:layout_constraintStart_toStartOf="parent"
+                    app:layout_constraintTop_toTopOf="parent" />
+
+
+                <TextView
+                    android:id="@+id/txt_selling_sheep_milk0"
+                    android:layout_width="400dp"
+                    android:layout_height="wrap_content"
+                    android:layout_marginStart="60dp"
+                    android:layout_marginTop="20dp"
+                    android:ems="10"
+                    android:text="@string/selling_sheep_milk"
+                    android:textSize="15sp"
+
+                    app:layout_constraintStart_toStartOf="parent"
+                    app:layout_constraintTop_toBottomOf="@id/revenue"
+                    tools:ignore="RtlCompat,UnknownId" />
+
+
+                <TextView
+                    android:id="@+id/txt_selling_goat_milk0"
+                    android:layout_width="400dp"
+                    android:layout_height="wrap_content"
+                    android:layout_marginStart="60dp"
+                    android:layout_marginTop="20dp"
+                    android:ems="10"
+                    android:text="@string/selling_goat_milk"
+                    android:textSize="15sp"
+
+                    app:layout_constraintStart_toStartOf="parent"
+                    app:layout_constraintTop_toBottomOf="@+id/txt_selling_sheep_milk"
+                    tools:ignore="RtlCompat,UnknownId" />
+
+
+                <TextView
+                    android:id="@+id/txt_selling_meat0"
+                    android:layout_width="400dp"
+                    android:layout_height="wrap_content"
+                    android:layout_marginStart="60dp"
+                    android:layout_marginTop="20dp"
+                    android:ems="10"
+                    android:text="@string/selling_meat"
+                    android:textSize="15sp"
+
+                    app:layout_constraintStart_toStartOf="parent"
+                    app:layout_constraintTop_toBottomOf="@+id/txt_selling_goat_milk"
+                    tools:ignore="UnknownId" />
+
+                <TextView
+                    android:id="@+id/txt_subsidies0"
+                    android:layout_width="400dp"
+                    android:layout_height="wrap_content"
+                    android:layout_marginStart="60dp"
+                    android:layout_marginTop="20dp"
+                    android:ems="10"
+                    android:text="@string/subsidies"
+                    android:textSize="15sp"
+                    app:layout_constraintStart_toStartOf="parent"
+                    app:layout_constraintTop_toBottomOf="@+id/txt_selling_meat"
+                    tools:ignore="UnknownId" />
+
+
+                <TextView
+                    android:id="@+id/txt_female0"
+                    android:layout_width="400dp"
+                    android:layout_height="wrap_content"
+                    android:layout_marginStart="60dp"
+                    android:layout_marginTop="20dp"
+                    android:ems="10"
+                    android:text="@string/female"
+                    android:textSize="15sp"
+
+                    app:layout_constraintStart_toStartOf="parent"
+                    app:layout_constraintTop_toBottomOf="@+id/txt_subsidies"
+                    tools:ignore="UnknownId" />
+
+
+                <TextView
+                    android:id="@+id/txt_manure0"
+                    android:layout_width="400dp"
+                    android:layout_height="wrap_content"
+                    android:layout_marginStart="60dp"
+                    android:layout_marginTop="20dp"
+                    android:ems="10"
+                    android:text="@string/manure"
+                    android:textSize="15sp"
+
+
+                    app:layout_constraintStart_toStartOf="parent"
+                    app:layout_constraintTop_toBottomOf="@+id/txt_female"
+                    tools:ignore="UnknownId" />
+
+
+                <TextView
+                    android:id="@+id/txt_black0"
+                    android:layout_width="400dp"
+                    android:layout_height="wrap_content"
+                    android:layout_marginStart="60dp"
+                    android:layout_marginTop="20dp"
+                    android:ems="10"
+                    android:text="@string/black"
+                    android:textSize="15sp"
+
+                    app:layout_constraintStart_toStartOf="parent"
+                    app:layout_constraintTop_toBottomOf="@+id/txt_manure"
+                    tools:ignore="UnknownId" />
+
+
+                <TextView
+                    android:id="@+id/txt_other_income0"
+                    android:layout_width="400dp"
+                    android:layout_height="wrap_content"
+                    android:layout_marginStart="8dp"
+                    android:layout_marginTop="20dp"
+                    android:layout_marginEnd="8dp"
+                    android:ems="10"
+                    android:text="@string/other_income"
+                    android:textSize="15sp"
+
+                    app:layout_constraintEnd_toEndOf="parent"
+                    app:layout_constraintHorizontal_bias="0.066"
+                    app:layout_constraintStart_toStartOf="parent"
+                    app:layout_constraintTop_toBottomOf="@+id/txt_black"
+                    tools:ignore="UnknownId" />
+
+
+
+
+
+
+
+
+
+
+                <EditText
+                    android:id="@+id/txt_selling_meat"
+                    android:layout_width="400dp"
+                    android:layout_height="wrap_content"
+                    android:layout_marginStart="60dp"
+                    android:layout_marginTop="20dp"
+                    android:ems="10"
+                    android:hint=""
+                    android:textSize="15sp"
+
+                    android:inputType="number"
+                    app:layout_constraintStart_toStartOf="parent"
+                    app:layout_constraintTop_toBottomOf="@+id/txt_selling_meat0"
+                    tools:ignore="UnknownId" />
+
+
+
+
+                <EditText
+                    android:id="@+id/txt_selling_sheep_milk"
+                    android:layout_width="400dp"
+                    android:layout_height="wrap_content"
+                    android:layout_marginStart="60dp"
+                    android:layout_marginTop="20dp"
+                    android:ems="10"
+                    android:hint=""
+                    android:inputType="number"
+                    android:textSize="15sp"
+
+                    app:layout_constraintStart_toStartOf="parent"
+                    app:layout_constraintTop_toBottomOf="@id/txt_selling_sheep_milk0"
+                    tools:ignore="RtlCompat,UnknownId" />
+
+
+                <EditText
+                    android:id="@+id/txt_selling_goat_milk"
+                    android:layout_width="400dp"
+                    android:layout_height="wrap_content"
+                    android:layout_marginStart="60dp"
+                    android:layout_marginTop="20dp"
+                    android:ems="10"
+                    android:hint=""
+                    android:inputType="number"
+                    android:textSize="15sp"
+
+                    app:layout_constraintStart_toStartOf="parent"
+                    app:layout_constraintTop_toBottomOf="@+id/txt_selling_goat_milk0"
+                    tools:ignore="RtlCompat,UnknownId" />
+
+
+                <EditText
+                    android:id="@+id/txt_subsidies"
+                    android:layout_width="400dp"
+                    android:layout_height="wrap_content"
+                    android:layout_marginStart="60dp"
+                    android:layout_marginTop="20dp"
+                    android:ems="10"
+                    android:hint=""
+                    android:inputType="number"
+
+                    android:textSize="15sp"
+                    app:layout_constraintStart_toStartOf="parent"
+                    app:layout_constraintTop_toBottomOf="@+id/txt_subsidies0"
+                    tools:ignore="UnknownId" />
+
+
+                <EditText
+                    android:id="@+id/txt_female"
+                    android:layout_width="400dp"
+                    android:layout_height="wrap_content"
+                    android:layout_marginStart="60dp"
+                    android:layout_marginTop="20dp"
+                    android:ems="10"
+                    android:hint=""
+                    android:textSize="15sp"
+
+                    android:inputType="number"
+                    app:layout_constraintStart_toStartOf="parent"
+                    app:layout_constraintTop_toBottomOf="@+id/txt_female0"
+                    tools:ignore="UnknownId" />
+
+
+                <EditText
+                    android:id="@+id/txt_manure"
+                    android:layout_width="400dp"
+                    android:layout_height="wrap_content"
+                    android:layout_marginStart="60dp"
+                    android:layout_marginTop="20dp"
+                    android:ems="10"
+                    android:hint=""
+                    android:inputType="number"
+                    android:textSize="15sp"
+
+
+                    app:layout_constraintStart_toStartOf="parent"
+                    app:layout_constraintTop_toBottomOf="@+id/txt_manure0"
+                    tools:ignore="UnknownId" />
+
+
+                <EditText
+                    android:id="@+id/txt_black"
+                    android:layout_width="400dp"
+                    android:layout_height="wrap_content"
+                    android:layout_marginStart="60dp"
+                    android:layout_marginTop="20dp"
+                    android:ems="10"
+                    android:hint=""
+                    android:inputType="number"
+                    android:textSize="15sp"
+
+                    app:layout_constraintStart_toStartOf="parent"
+                    app:layout_constraintTop_toBottomOf="@+id/txt_black0"
+                    tools:ignore="UnknownId" />
+
+
+                <EditText
+                    android:id="@+id/txt_other_income"
+                    android:layout_width="400dp"
+                    android:layout_height="wrap_content"
+                    android:layout_marginStart="8dp"
+                    android:layout_marginTop="20dp"
+                    android:layout_marginEnd="8dp"
+                    android:ems="10"
+                    android:hint=""
+                    android:inputType="number"
+                    android:textSize="15sp"
+
+                    app:layout_constraintEnd_toEndOf="parent"
+                    app:layout_constraintHorizontal_bias="0.066"
+                    app:layout_constraintStart_toStartOf="parent"
+                    app:layout_constraintTop_toBottomOf="@+id/txt_other_income0"
+                    tools:ignore="UnknownId" />
+
+
+                <Button
+                    android:id="@+id/save_annual"
+                    android:layout_width="142dp"
+                    android:layout_height="44dp"
+                    android:layout_marginStart="192dp"
+                    android:layout_marginTop="20dp"
+                    android:background="#D2B48C"
+                    android:text="@string/bn_save"
+                    app:layout_constraintStart_toStartOf="parent"
+                    app:layout_constraintTop_toBottomOf="@+id/txt_other_income"
+                    tools:ignore="UnknownId" />
+
+
+                <TextView
+                    android:id="@+id/txt_cost"
+                    android:layout_width="640dp"
+                    android:layout_height="40dp"
+                    android:layout_marginStart="110dp"
+                    android:layout_marginTop="24dp"
+                    android:layout_marginEnd="50dp"
+                    android:text="@string/annual_costs"
+                    android:textAlignment="center"
+                    android:textSize="30sp"
+                    android:textStyle="bold"
+                    app:layout_constraintEnd_toEndOf="parent"
+                    app:layout_constraintHorizontal_bias="1.0"
+                    app:layout_constraintStart_toEndOf="@+id/revenue"
+                    app:layout_constraintTop_toTopOf="parent"
+                    tools:ignore="UnknownId" />
+
+
+                <TextView
+                    android:id="@+id/concentrated_fodder0"
+                    android:layout_width="315dp"
+                    android:layout_height="wrap_content"
+                    android:layout_marginStart="80dp"
+                    android:layout_marginTop="25dp"
+                    android:text="@string/concentrated_fodder"
+                    android:textSize="15sp"
+                    app:layout_constraintStart_toEndOf="@+id/txt_selling_sheep_milk"
+                    app:layout_constraintTop_toBottomOf="@+id/txt_cost" />
+
+
+
+
+
+
+                <TextView
+                    android:id="@+id/txt_trefoil0"
+                    android:layout_width="315dp"
+                    android:layout_height="wrap_content"
+                    android:layout_marginStart="80dp"
+                    android:layout_marginTop="20dp"
+                    android:ems="10"
+                    android:text="@string/trefoil"
+                    android:textSize="15sp"
+
+                    app:layout_constraintStart_toEndOf="@+id/txt_selling_goat_milk"
+                    app:layout_constraintTop_toBottomOf="@+id/txt_concentrated_fodder"
+                    tools:ignore="UnknownId" />
+
+
+                <TextView
+                    android:id="@+id/txt_hay0"
+                    android:layout_width="300dp"
+                    android:layout_height="wrap_content"
+                    android:layout_marginStart="96dp"
+                    android:layout_marginTop="20dp"
+                    android:ems="10"
+                    android:text="@string/hay"
+                    android:textSize="15sp"
+
+                    app:layout_constraintStart_toEndOf="@+id/txt_trefoil"
+                    app:layout_constraintTop_toBottomOf="@+id/txt_concentrated_fodder"
+                    tools:ignore="UnknownId" />
+
+
+                <TextView
+                    android:id="@+id/txt_electricity0"
+                    android:layout_width="315dp"
+                    android:layout_height="wrap_content"
+                    android:layout_marginStart="80dp"
+                    android:layout_marginTop="20dp"
+                    android:ems="10"
+                    android:text="@string/electricity"
+
+                    android:textSize="15sp"
+                    app:layout_constraintStart_toEndOf="@+id/txt_subsidies"
+                    app:layout_constraintTop_toBottomOf="@+id/txt_trefoil"
+                    tools:ignore="UnknownId" />
+
+
+                <TextView
+                    android:id="@+id/txt_replacement_animals0"
+                    android:layout_width="300dp"
+                    android:layout_height="wrap_content"
+                    android:layout_marginStart="96dp"
+                    android:layout_marginTop="24dp"
+                    android:ems="10"
+                    android:text="@string/replacement_animals"
+                    android:textSize="15sp"
+
+                    app:layout_constraintStart_toEndOf="@+id/txt_electricity"
+                    app:layout_constraintTop_toBottomOf="@+id/txt_hay"
+                    tools:ignore="UnknownId" />
+
+
+                <TextView
+                    android:id="@+id/txt_petroleum0"
+                    android:layout_width="315dp"
+                    android:layout_height="wrap_content"
+
+                    android:layout_marginStart="80dp"
+                    android:layout_marginTop="20dp"
+                    android:ems="10"
+                    android:text="@string/petroleum"
+                    android:textSize="15sp"
+                    app:layout_constraintStart_toEndOf="@+id/txt_female"
+                    app:layout_constraintTop_toBottomOf="@+id/txt_electricity"
+                    tools:ignore="UnknownId" />
+
+
+                <TextView
+                    android:id="@+id/txt_petrol0"
+                    android:layout_width="300dp"
+                    android:layout_height="wrap_content"
+                    android:layout_marginStart="96dp"
+                    android:layout_marginTop="20dp"
+                    android:ems="10"
+                    android:text="@string/petrol"
+
+                    android:textSize="15sp"
+                    app:layout_constraintStart_toEndOf="@+id/txt_petroleum"
+                    app:layout_constraintTop_toBottomOf="@+id/txt_replacement_animals"
+                    tools:ignore="UnknownId" />
+
+
+                <TextView
+                    android:id="@+id/txt_medicines0"
+                    android:layout_width="630dp"
+                    android:layout_height="wrap_content"
+                    android:layout_marginStart="80dp"
+                    android:layout_marginTop="28dp"
+                    android:ems="10"
+                    android:text="@string/medicines"
+
+                    android:textSize="15sp"
+                    app:layout_constraintStart_toEndOf="@+id/txt_manure"
+                    app:layout_constraintTop_toBottomOf="@+id/txt_petroleum"
+                    tools:ignore="UnknownId" />
+
+
+                <TextView
+                    android:id="@+id/txt_sponges0"
+                    android:layout_width="315dp"
+                    android:layout_height="wrap_content"
+                    android:layout_marginStart="76dp"
+                    android:layout_marginTop="20dp"
+                    android:ems="10"
+                    android:text="@string/sponges"
+                    android:textSize="15sp"
+
+                    app:layout_constraintStart_toEndOf="@+id/txt_other_income"
+                    app:layout_constraintTop_toBottomOf="@+id/txt_repair"
+                    tools:ignore="UnknownId" />
+
+
+                <TextView
+                    android:id="@+id/txt_repair0"
+                    android:layout_width="315dp"
+                    android:layout_height="wrap_content"
+                    android:layout_marginStart="76dp"
+                    android:layout_marginTop="20dp"
+                    android:ems="10"
+                    android:text="@string/repair"
+                    android:textSize="15sp"
+
+                    app:layout_constraintStart_toEndOf="@+id/txt_other_income"
+                    app:layout_constraintTop_toBottomOf="@+id/txt_medicines"
+                    tools:ignore="UnknownId" />
+
+
+                <TextView
+                    android:id="@+id/txt_equipment0"
+                    android:layout_width="300dp"
+                    android:layout_height="wrap_content"
+                    android:layout_marginStart="96dp"
+                    android:layout_marginTop="20dp"
+                    android:ems="10"
+                    android:text="@string/equipment"
+                    android:textSize="15sp"
+
+                    app:layout_constraintStart_toEndOf="@+id/txt_repair"
+                    app:layout_constraintTop_toBottomOf="@+id/txt_medicines"
+                    tools:ignore="UnknownId" />
+
+
+                <TextView
+                    android:id="@+id/txt_wages_fields0"
+                    android:layout_width="300dp"
+                    android:layout_height="wrap_content"
+
+                    android:layout_marginStart="96dp"
+                    android:layout_marginTop="20dp"
+                    android:ems="10"
+                    android:text="@string/WAGES_FIELDS"
+
+                    android:textSize="15sp"
+                    app:layout_constraintStart_toEndOf="@+id/txt_sponges"
+                    app:layout_constraintTop_toBottomOf="@+id/txt_equipment"
+                    tools:ignore="UnknownId" />
+
+
+                <TextView
+                    android:id="@+id/txt_wages_staff0"
+                    android:layout_width="300dp"
+                    android:layout_height="wrap_content"
+                    android:layout_marginStart="96dp"
+
+                    android:layout_marginTop="20dp"
+                    android:ems="10"
+                    android:text="@string/WAGES_STAFF"
+                    android:textSize="15sp"
+                    app:layout_constraintStart_toEndOf="@+id/txt_expenses_pastures"
+                    app:layout_constraintTop_toBottomOf="@+id/txt_sponges"
+                    tools:ignore="UnknownId" />
+
+
+                <TextView
+                    android:id="@+id/txt_expenses_pastures0"
+                    android:layout_width="315dp"
+                    android:layout_height="wrap_content"
+                    android:layout_marginStart="76dp"
+                    android:layout_marginTop="20dp"
+                    android:ems="10"
+                    android:text="@string/EXPENSES_PASTURES"
+                    android:textSize="15sp"
+
+                    app:layout_constraintStart_toEndOf="@+id/txt_other_income"
+                    app:layout_constraintTop_toBottomOf="@+id/txt_sponges"
+                    tools:ignore="UnknownId" />
+
+
+                <TextView
+                    android:id="@+id/txt_other_expenses0"
+                    android:layout_width="315dp"
+                    android:layout_height="wrap_content"
+                    android:layout_marginStart="76dp"
+                    android:layout_marginTop="20dp"
+                    android:ems="10"
+                    android:text="@string/other_expenses"
+                    android:textSize="15sp"
+
+                    app:layout_constraintStart_toEndOf="@+id/txt_other_income"
+                    app:layout_constraintTop_toBottomOf="@+id/txt_wages_staff"
+                    tools:ignore="UnknownId" />
+
+
+
+
+
+
+
+
+
+
+                <EditText
+                    android:id="@+id/txt_concentrated_fodder"
+                    android:layout_width="300dp"
+                    android:layout_height="wrap_content"
+                    android:layout_marginStart="96dp"
+
+                    android:layout_marginTop="20dp"
+                    android:ems="10"
+                    android:hint="@string/concentrated_fodder"
+                    android:inputType="number"
+                    android:textSize="15sp"
+                    app:layout_constraintStart_toEndOf="@+id/concentrated_fodder0"
+                    app:layout_constraintTop_toBottomOf="@+id/txt_cost"
+                    tools:ignore="UnknownId" />
+
+
+                <EditText
+                    android:id="@+id/txt_trefoil"
+                    android:layout_width="315dp"
+                    android:layout_height="wrap_content"
+                    android:layout_marginStart="80dp"
+                    android:layout_marginTop="20dp"
+                    android:ems="10"
+                    android:hint=""
+                    android:inputType="number"
+                    android:textSize="15sp"
+
+                    app:layout_constraintStart_toEndOf="@+id/txt_selling_goat_milk"
+                    app:layout_constraintTop_toBottomOf="@+id/txt_trefoil0"
+                    tools:ignore="UnknownId" />
+
+
+                <EditText
+                    android:id="@+id/txt_hay"
+                    android:layout_width="300dp"
+                    android:layout_height="wrap_content"
+                    android:layout_marginStart="96dp"
+                    android:layout_marginTop="20dp"
+                    android:ems="10"
+                    android:hint=""
+                    android:inputType="number"
+                    android:textSize="15sp"
+
+                    app:layout_constraintStart_toEndOf="@+id/txt_trefoil"
+                    app:layout_constraintTop_toBottomOf="@+id/txt_hay0"
+                    tools:ignore="UnknownId" />
+
+
+                <EditText
+                    android:id="@+id/txt_electricity"
+                    android:layout_width="315dp"
+                    android:layout_height="wrap_content"
+                    android:layout_marginStart="80dp"
+                    android:layout_marginTop="20dp"
+                    android:ems="10"
+                    android:hint=""
+
+                    android:inputType="number"
+                    android:textSize="15sp"
+                    app:layout_constraintStart_toEndOf="@+id/txt_subsidies"
+                    app:layout_constraintTop_toBottomOf="@+id/txt_electricity0"
+                    tools:ignore="UnknownId" />
+
+
+                <EditText
+                    android:id="@+id/txt_replacement_animals"
+                    android:layout_width="300dp"
+                    android:layout_height="wrap_content"
+                    android:layout_marginStart="96dp"
+                    android:layout_marginTop="24dp"
+                    android:ems="10"
+                    android:hint=""
+                    android:inputType="number"
+                    android:textSize="15sp"
+
+                    app:layout_constraintStart_toEndOf="@+id/txt_electricity"
+                    app:layout_constraintTop_toBottomOf="@+id/txt_replacement_animals0"
+                    tools:ignore="UnknownId" />
+
+
+                <EditText
+                    android:id="@+id/txt_petroleum"
+                    android:layout_width="315dp"
+                    android:layout_height="wrap_content"
+
+                    android:layout_marginStart="80dp"
+                    android:layout_marginTop="20dp"
+                    android:ems="10"
+                    android:hint=""
+                    android:inputType="number"
+                    android:textSize="15sp"
+                    app:layout_constraintStart_toEndOf="@+id/txt_female"
+                    app:layout_constraintTop_toBottomOf="@+id/txt_petroleum0"
+                    tools:ignore="UnknownId" />
+
+
+                <EditText
+                    android:id="@+id/txt_petrol"
+                    android:layout_width="300dp"
+                    android:layout_height="wrap_content"
+                    android:layout_marginStart="96dp"
+                    android:layout_marginTop="20dp"
+                    android:ems="10"
+                    android:hint=""
+                    android:inputType="number"
+
+                    android:textSize="15sp"
+                    app:layout_constraintStart_toEndOf="@+id/txt_petroleum"
+                    app:layout_constraintTop_toBottomOf="@+id/txt_petrol0"
+                    tools:ignore="UnknownId" />
+
+
+                <EditText
+                    android:id="@+id/txt_medicines"
+                    android:layout_width="630dp"
+                    android:layout_height="wrap_content"
+                    android:layout_marginStart="80dp"
+                    android:layout_marginTop="28dp"
+                    android:ems="10"
+                    android:hint=""
+                    android:inputType="number"
+
+                    android:textSize="15sp"
+                    app:layout_constraintStart_toEndOf="@+id/txt_manure"
+                    app:layout_constraintTop_toBottomOf="@+id/txt_medicines0"
+                    tools:ignore="UnknownId" />
+
+
+                <EditText
+                    android:id="@+id/txt_sponges"
+                    android:layout_width="315dp"
+                    android:layout_height="wrap_content"
+                    android:layout_marginStart="76dp"
+                    android:layout_marginTop="20dp"
+                    android:ems="10"
+                    android:hint=""
+                    android:inputType="number"
+                    android:textSize="15sp"
+
+                    app:layout_constraintStart_toEndOf="@+id/txt_other_income"
+                    app:layout_constraintTop_toBottomOf="@+id/txt_sponges0"
+                    tools:ignore="UnknownId" />
+
+
+                <EditText
+                    android:id="@+id/txt_repair"
+                    android:layout_width="315dp"
+                    android:layout_height="wrap_content"
+                    android:layout_marginStart="76dp"
+                    android:layout_marginTop="20dp"
+                    android:ems="10"
+                    android:hint=""
+                    android:inputType="number"
+                    android:textSize="15sp"
+
+                    app:layout_constraintStart_toEndOf="@+id/txt_other_income"
+                    app:layout_constraintTop_toBottomOf="@+id/txt_repair0"
+                    tools:ignore="UnknownId" />
+
+
+                <EditText
+                    android:id="@+id/txt_equipment"
+                    android:layout_width="300dp"
+                    android:layout_height="wrap_content"
+                    android:layout_marginStart="96dp"
+                    android:layout_marginTop="20dp"
+                    android:ems="10"
+                    android:hint=""
+                    android:inputType="number"
+                    android:textSize="15sp"
+
+                    app:layout_constraintStart_toEndOf="@+id/txt_repair"
+                    app:layout_constraintTop_toBottomOf="@+id/txt_equipment0"
+                    tools:ignore="UnknownId" />
+
+
+                <EditText
+                    android:id="@+id/txt_wages_fields"
+                    android:layout_width="300dp"
+                    android:layout_height="wrap_content"
+
+                    android:layout_marginStart="96dp"
+                    android:layout_marginTop="20dp"
+                    android:ems="10"
+                    android:hint=""
+
+                    android:inputType="number"
+                    android:textSize="15sp"
+                    app:layout_constraintStart_toEndOf="@+id/txt_sponges"
+                    app:layout_constraintTop_toBottomOf="@+id/txt_wages_fields0"
+                    tools:ignore="UnknownId" />
+
+
+                <EditText
+                    android:id="@+id/txt_wages_staff"
+                    android:layout_width="300dp"
+                    android:layout_height="wrap_content"
+                    android:layout_marginStart="96dp"
+
+                    android:layout_marginTop="20dp"
+                    android:ems="10"
+                    android:hint=""
+                    android:inputType="number"
+                    android:textSize="15sp"
+                    app:layout_constraintStart_toEndOf="@+id/txt_expenses_pastures"
+                    app:layout_constraintTop_toBottomOf="@+id/txt_wages_staff0"
+                    tools:ignore="UnknownId" />
+
+
+                <EditText
+                    android:id="@+id/txt_expenses_pastures"
+                    android:layout_width="315dp"
+                    android:layout_height="wrap_content"
+                    android:layout_marginStart="76dp"
+                    android:layout_marginTop="20dp"
+                    android:ems="10"
+                    android:hint=""
+                    android:inputType="number"
+                    android:textSize="15sp"
+
+                    app:layout_constraintStart_toEndOf="@+id/txt_other_income"
+                    app:layout_constraintTop_toBottomOf="@+id/txt_expenses_pastures0"
+                    tools:ignore="UnknownId" />
+
+
+                <EditText
+                    android:id="@+id/txt_other_expenses"
+                    android:layout_width="315dp"
+                    android:layout_height="wrap_content"
+                    android:layout_marginStart="76dp"
+                    android:layout_marginTop="20dp"
+                    android:ems="10"
+                    android:hint=""
+                    android:inputType="number"
+                    android:textSize="15sp"
+
+                    app:layout_constraintStart_toEndOf="@+id/txt_other_income"
+                    app:layout_constraintTop_toBottomOf="@+id/txt_other_expenses0"
+                    tools:ignore="UnknownId" />
+
+
+                <Button
+                    android:id="@+id/bn_save2"
+                    android:layout_width="142dp"
+                    android:layout_height="wrap_content"
+                    android:layout_marginStart="172dp"
+                    android:layout_marginTop="20dp"
+                    android:background="#D2B48C"
+                    android:text="@string/bn_save"
+                    app:layout_constraintStart_toEndOf="@+id/txt_other_expenses"
+                    app:layout_constraintTop_toBottomOf="@+id/txt_wages_staff"
+                    tools:ignore="UnknownId" />
+
+
+            </android.support.constraint.ConstraintLayout>
+        </HorizontalScrollView>
+    </android.support.v4.widget.NestedScrollView>
+</LinearLayout>

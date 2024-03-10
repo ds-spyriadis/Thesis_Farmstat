@@ -1,0 +1,165 @@
+<resources xmlns:tools="http://schemas.android.com/tools">
+    <string name="app_name" translatable="false">FarmStat</string>
+
+    <!-- TODO: Remove or change this placeholder text -->
+    <string name="hello_blank_fragment" translatable="false">Hello blank fragment</string>
+    <string name="view">View</string>
+    <string name="edit">Edit</string>
+    <string name="add">Add</string>
+    <string name="delete">Delete</string>
+    <string name="bn_save">Save</string>
+    <string name="bn_basic">Add basic unit details</string>
+    <string name="bn_economic">Add Economic unit figures</string>
+    <string name="bn_clear">Clear</string>
+
+
+    <string name="BASIC_UNIT_DATA">BASIC UNIT DATA</string>
+
+    <string name="add_New_Contact">Add new elements</string>
+    <string name="add_number">Add your telephone number</string>
+    <string name="add_name">Add your name</string>
+    <string name="add_region">Add region</string>
+    <string name="add_year">Add current year</string>
+
+    <string name="age">Add farmer age</string>
+    <string name="total_animals">Add total number of animals</string>
+    <string name="sheep">Add number of sheep</string>
+    <string name="goats">Add number of goats</string>
+    <string name="milking">Existence - type of milking parlor</string>
+    <string name="licensing">licensing yes or no</string>
+    <string name="electrification">electrification yes or no</string>
+    <string name="tractor">Existence tractor yes or no</string>
+    <string name="sheepmilk">Total sheep milk per year</string>
+    <string name="goatmilk">Total goat milk per year</string>
+    <string name="milk_per_sheep">Milk per sheep</string>
+
+
+    <string name="prevision" translatable="false">Prevision</string>
+    <string name="comment">Comments</string>
+
+    <string name="financial_data">Financial Data</string>
+
+    <string name="annual_revenue">ANNUAL REVENUE</string>
+    <string name="selling_sheep_milk">Selling sheep milk €</string>
+    <string name="selling_goat_milk">Selling goat milk €</string>
+    <string name="selling_meat">Selling meat €</string>
+    <string name="subsidies">Subsidies €</string>
+    <string name="female">Female €</string>
+    <string name="manure">Manure €</string>
+    <string name="black">Black €</string>
+    <string name="other_income">Other income €</string>
+
+
+    <string name="annual_costs">ANNUAL COSTS</string>
+
+    <string name="concentrated_fodder">Concentrated fodder €</string>
+    <string name="trefoil">Trefoil €</string>
+    <string name="hay">Hay €</string>
+    <string name="electricity">Electricity</string>
+
+    <string name="replacement_animals">Replacement animals €</string>
+    <string name="petroleum">Petroleum €</string>
+    <string name="petrol">Petrol €</string>
+    <string name="medicines">Medicines €</string>
+    <string name="sponges">Sponges €</string>
+    <string name="repair">Repair €</string>
+    <string name="equipment">Equipment €</string>
+    <string name="WAGES_FIELDS">Wages for field €</string>
+    <string name="WAGES_STAFF">Wages for staff €</string>
+    <string name="EXPENSES_PASTURES">Expenses pastures €</string>
+    <string name="other_expenses">Other expenses €</string>
+    <string name="total_revenue">Total revenue €</string>
+    <string name="total_expenses">total expenses €</string>
+    <string name="mixed_revenue">Mixed revenue €</string>
+
+
+    <string name="select_year">Select Year</string>
+
+
+    <string name="read_number">Telephone number</string>
+    <string name="read_name">Name</string>
+    <string name="read_region">Region</string>
+
+
+    <string name="read_basic_unit_data">BASIC UNIT DATA</string>
+
+
+    <string name="read_year">Current year</string>
+
+    <string name="read_age">Farmer age</string>
+    <string name="read_total_animals">Total number of animals</string>
+    <string name="read_sheep">Number of sheep</string>
+    <string name="read_goats">Number of goats</string>
+    <string name="read_milking">Existence milking parlor</string>
+
+
+    <string name="read_licensing">licensing yes or no</string>
+    <string name="read_electrification">Electrification </string>
+    <string name="read_tractor">Existence tractor </string>
+    <string name="read_sheepmilk">Total sheep milk per year</string>
+    <string name="read_goatmilk">Total goat milk per year</string>
+    <string name="read_milk_per_sheep">milk per sheep</string>
+
+
+    <string name="read_prevision" translatable="false">Prevision</string>
+    <string name="read_difference" translatable="false">difference Prevision</string>
+
+
+    <string name="read_annual_revenue">ANNUAL REVENUE</string>
+    <string name="read_selling_sheep_milk">Selling sheep milk €</string>
+    <string name="read_selling_goat_milk">Selling goat milk €</string>
+    <string name="read_selling_meat">Selling meat €</string>
+    <string name="read_subsidies">Subsidies €</string>
+    <string name="read_female">Female €</string>
+    <string name="read_manure">Manure €</string>
+    <string name="read_black">Black €</string>
+    <string name="read_other_income">Other income €</string>
+
+
+    <string name="read_annual_costs">ANNUAL COSTS</string>
+
+    <string name="read_concentrated_fodder">Concentrated fodder €</string>
+    <string name="read_trefoil">Trefoil €</string>
+    <string name="read_hay">Hay €</string>
+    <string name="read_electricity">Electricity</string>
+
+    <string name="read_replacement_animals">replacement animals €</string>
+    <string name="read_petroleum">Petroleum €</string>
+    <string name="read_petrol">Petrol €</string>
+    <string name="read_medicines">Medicines €</string>
+    <string name="read_sponges">Sponges €</string>
+    <string name="read_repair">Repair €</string>
+    <string name="read_equipment">Equipment €</string>
+    <string name="read_WAGES_FIELDS">Wages for field €</string>
+    <string name="read_WAGES_STAFF">Wages for staff €</string>
+    <string name="read_EXPENSES_PASTURES">Expenses pastures €</string>
+    <string name="read_other_expenses">Other expenses €</string>
+    <string name="read_total_revenue">Total revenue €</string>
+    <string name="read_total_expenses">Τotal expenses €</string>
+    <string name="read_mixed_revenue">Mixed revenue €</string>
+
+
+    <string name="UNIT_DATA">Unit Details</string>
+
+    <string name="PHONEBOOK">Phonebook</string>
+
+
+    <string name="press_telephone_number">press telephone number</string>
+    <string name="press_year">press year</string>
+    <string name="delete_entry">Delete entry</string>
+    <string name="yes">Yes</string>
+    <string name="no">No</string>
+    <string name="contacts">Contacts</string>
+
+    <string name="diagram">Graphs</string>
+
+
+</resources>
+
+
+
+
+
+
+
+

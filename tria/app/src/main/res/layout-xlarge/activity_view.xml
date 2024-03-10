@@ -1,0 +1,1396 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:background="#F5DEB3"
+
+
+    android:baselineAligned="false"
+    android:orientation="vertical">
+
+
+    <TextView
+        android:id="@+id/read"
+        android:layout_width="750dp"
+        android:layout_height="wrap_content"
+        android:layout_marginStart="8dp"
+        android:layout_marginTop="16dp"
+        android:layout_marginEnd="8dp"
+        android:text="unit details"
+        android:textAlignment="center"
+        android:textSize="30sp"
+        android:textStyle="bold" />
+
+
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="112dp"
+        android:orientation="horizontal">
+
+
+        <android.support.constraint.ConstraintLayout
+            android:layout_width="match_parent"
+            android:layout_height="112dp"
+            android:background="#D2B48C">
+
+
+            <EditText
+                android:id="@+id/editText1"
+                android:layout_width="wrap_content"
+                android:layout_height="45dp"
+                android:layout_marginTop="4dp"
+                android:ems="10"
+                android:hint="@string/press_telephone_number"
+                android:inputType="number"
+                app:layout_constraintEnd_toEndOf="parent"
+                app:layout_constraintHorizontal_bias="0.027"
+                app:layout_constraintStart_toStartOf="parent"
+                app:layout_constraintTop_toTopOf="parent"
+                tools:ignore="RtlCompat,UnknownId">
+
+            </EditText>
+
+            <EditText
+                android:id="@+id/editext2"
+                android:layout_width="126dp"
+                android:layout_height="45dp"
+                android:layout_marginStart="8dp"
+                android:layout_marginTop="4dp"
+                android:layout_marginEnd="8dp"
+                android:ems="10"
+                android:hint="@string/press_year"
+                android:inputType="number"
+                app:layout_constraintEnd_toEndOf="parent"
+                app:layout_constraintHorizontal_bias="0.012"
+                app:layout_constraintStart_toStartOf="parent"
+                app:layout_constraintTop_toBottomOf="@+id/editText1"
+                tools:ignore="RtlCompat,UnknownId" />
+
+
+            <TextView
+                android:id="@+id/text_year"
+                android:layout_width="300dp"
+                android:layout_height="90dp"
+                android:layout_marginStart="50dp"
+                android:layout_marginTop="8dp"
+                android:layout_marginEnd="8dp"
+                android:ems="10"
+                android:text=""
+                app:layout_constraintEnd_toEndOf="parent"
+                app:layout_constraintStart_toEndOf="@+id/button2"
+                app:layout_constraintTop_toTopOf="parent"
+                tools:ignore="RtlCompat,UnknownId" />
+
+
+            <TextView
+                android:id="@+id/button1"
+                android:layout_width="50dp"
+                android:layout_height="50dp"
+                android:textSize="30sp"
+                android:text="&#9742; "
+                android:layout_marginStart="16dp"
+                android:layout_marginTop="4dp"
+                android:layout_weight="1"
+                app:layout_constraintStart_toEndOf="@+id/editText1"
+                app:layout_constraintTop_toTopOf="parent" />
+
+            <TextView
+                android:id="@+id/button2"
+                android:layout_width="50dp"
+                android:layout_height="50dp"
+                android:textSize="30sp"
+                android:text="&#128197;"
+                android:layout_marginStart="16dp"
+                android:layout_marginTop="4dp"
+                android:layout_weight="1"
+                app:layout_constraintStart_toEndOf="@+id/editText1"
+                app:layout_constraintTop_toBottomOf="@+id/button1" />
+
+            <TextView
+                android:id="@+id/diagrambutton"
+                android:layout_width="50dp"
+                android:layout_height="50dp"
+                android:text="📈"
+                android:textSize="30sp"
+
+                android:layout_marginStart="8dp"
+                android:layout_marginTop="8dp"
+                android:layout_marginBottom="8dp"
+                app:layout_constraintBottom_toBottomOf="parent"
+                app:layout_constraintStart_toEndOf="@+id/button2"
+                app:layout_constraintTop_toTopOf="parent" />
+
+
+        </android.support.constraint.ConstraintLayout>
+
+
+    </LinearLayout>
+
+    <android.support.v4.widget.NestedScrollView xmlns:android="http://schemas.android.com/apk/res/android"
+        xmlns:app="http://schemas.android.com/apk/res-auto"
+        xmlns:tools="http://schemas.android.com/tools"
+        android:layout_width="match_parent"
+        android:layout_height="match_parent"
+        android:background="@color/BurlyWood"
+        android:scrollbars="none">
+
+        <HorizontalScrollView
+            android:layout_width="match_parent"
+            android:layout_height="match_parent"
+            android:scrollbars="none">
+
+
+            <android.support.constraint.ConstraintLayout xmlns:app="http://schemas.android.com/apk/res-auto"
+                android:layout_width="wrap_content"
+                android:layout_height="match_parent"
+                tools:context=".ViewActivity">
+
+                <!-- TODO: Update blank fragment layout -->
+
+
+                <TextView
+                    android:id="@+id/read_name0"
+                    android:layout_width="350dp"
+                    android:layout_height="25dp"
+                    android:layout_marginStart="20dp"
+                    android:layout_marginTop="16dp"
+                    android:layout_marginEnd="8dp"
+                    android:text="@string/read_name"
+                    android:textSize="20sp"
+                    app:layout_constraintEnd_toEndOf="parent"
+                    app:layout_constraintHorizontal_bias="0.0"
+                    app:layout_constraintStart_toStartOf="parent"
+                    app:layout_constraintTop_toTopOf="parent" />
+
+
+                <TextView
+                    android:id="@+id/read_name"
+                    android:layout_width="350dp"
+                    android:layout_height="25dp"
+                    android:layout_marginTop="16dp"
+                    android:layout_marginEnd="8dp"
+                    android:text=""
+                    android:textSize="20sp"
+                    app:layout_constraintEnd_toEndOf="parent"
+                    app:layout_constraintHorizontal_bias="1.0"
+                    app:layout_constraintStart_toEndOf="@+id/read_name0"
+                    app:layout_constraintTop_toTopOf="parent" />
+
+
+                <TextView
+                    android:id="@+id/read_region0"
+                    android:layout_width="350dp"
+                    android:layout_height="25dp"
+                    android:layout_marginStart="20dp"
+                    android:layout_marginTop="16dp"
+                    android:layout_marginEnd="8dp"
+                    android:text="@string/read_region"
+
+                    android:textSize="20sp"
+                    app:layout_constraintEnd_toEndOf="parent"
+                    app:layout_constraintHorizontal_bias="0.0"
+                    app:layout_constraintRight_toLeftOf="@id/read_region"
+                    app:layout_constraintStart_toStartOf="parent"
+
+                    app:layout_constraintTop_toBottomOf="@id/read_name"
+                    tools:ignore="RtlCompat,UnknownId" />
+
+                <TextView
+                    android:id="@+id/read_region"
+                    android:layout_width="350dp"
+                    android:layout_height="25dp"
+                    android:layout_marginTop="16dp"
+
+                    android:layout_marginEnd="8dp"
+                    android:textSize="20sp"
+                    app:layout_constraintEnd_toEndOf="parent"
+                    app:layout_constraintHorizontal_bias="1.0"
+                    app:layout_constraintStart_toEndOf="@+id/read_region0"
+                    app:layout_constraintTop_toBottomOf="@+id/read_name"
+                    tools:ignore="RtlCompat,UnknownId" />
+
+
+                <TextView
+                    android:id="@+id/read_number0"
+                    android:layout_width="350dp"
+                    android:layout_height="25dp"
+                    android:layout_marginStart="20dp"
+                    android:layout_marginTop="16dp"
+                    android:layout_marginEnd="8dp"
+                    android:text="@string/read_number"
+                    android:textSize="20sp"
+                    app:layout_constraintEnd_toEndOf="parent"
+                    app:layout_constraintHorizontal_bias="0.0"
+                    app:layout_constraintStart_toStartOf="parent"
+                    app:layout_constraintTop_toBottomOf="@id/read_region"
+                    tools:ignore="RtlCompat,UnknownId" />
+
+                <TextView
+                    android:id="@+id/read_number"
+                    android:layout_width="350dp"
+                    android:layout_height="25dp"
+                    android:layout_marginTop="16dp"
+                    android:layout_marginEnd="8dp"
+                    android:ems="10"
+                    android:textSize="20sp"
+
+                    app:layout_constraintEnd_toEndOf="parent"
+                    app:layout_constraintHorizontal_bias="1.0"
+                    app:layout_constraintStart_toEndOf="@+id/read_number0"
+                    app:layout_constraintTop_toBottomOf="@id/read_region"
+                    tools:ignore="RtlCompat,UnknownId" />
+
+
+                <TextView
+                    android:id="@+id/read_current_year0"
+                    android:layout_width="350dp"
+                    android:layout_height="25dp"
+                    android:layout_marginStart="20dp"
+                    android:layout_marginTop="16dp"
+                    android:layout_marginEnd="8dp"
+                    android:text="@string/read_year"
+                    android:textSize="20sp"
+                    app:layout_constraintEnd_toEndOf="parent"
+                    app:layout_constraintHorizontal_bias="0.0"
+                    app:layout_constraintStart_toStartOf="parent"
+                    app:layout_constraintTop_toBottomOf="@id/read_number"
+                    tools:ignore="RtlCompat,UnknownId" />
+
+                <TextView
+                    android:id="@+id/read_current_year"
+                    android:layout_width="350dp"
+                    android:layout_height="25dp"
+                    android:layout_marginStart="29dp"
+                    android:layout_marginTop="16dp"
+                    android:layout_marginEnd="8dp"
+                    android:text=""
+                    android:textSize="20sp"
+                    app:layout_constraintEnd_toEndOf="parent"
+                    app:layout_constraintHorizontal_bias="1.0"
+                    app:layout_constraintStart_toEndOf="@+id/read_current_year0"
+                    app:layout_constraintTop_toBottomOf="@id/read_number"
+                    tools:ignore="RtlCompat,UnknownId" />
+
+
+                <TextView
+                    android:id="@+id/read_basic_unit_data"
+                    android:layout_width="180dp"
+                    android:layout_height="25dp"
+                    android:layout_marginStart="8dp"
+                    android:layout_marginTop="20dp"
+                    android:layout_marginEnd="8dp"
+                    android:text="@string/read_basic_unit_data"
+
+                    android:textSize="20sp"
+                    app:layout_constraintEnd_toEndOf="parent"
+                    app:layout_constraintStart_toStartOf="parent"
+                    app:layout_constraintTop_toBottomOf="@id/read_current_year0"
+                    tools:ignore="RtlCompat,UnknownId" />
+
+
+                <TextView
+                    android:id="@+id/read_age0"
+                    android:layout_width="350dp"
+                    android:layout_height="25dp"
+                    android:layout_marginStart="20dp"
+                    android:layout_marginTop="16dp"
+                    android:layout_marginEnd="8dp"
+                    android:text="@string/read_age"
+                    android:textSize="20sp"
+                    app:layout_constraintEnd_toStartOf="@+id/read_age"
+                    app:layout_constraintHorizontal_bias="0.0"
+                    app:layout_constraintStart_toStartOf="parent"
+                    app:layout_constraintTop_toBottomOf="@id/read_basic_unit_data"
+                    tools:ignore="RtlCompat,UnknownId" />
+
+
+                <TextView
+                    android:id="@+id/read_age"
+                    android:layout_width="350dp"
+                    android:layout_height="24dp"
+                    android:layout_marginStart="32dp"
+                    android:layout_marginTop="16dp"
+                    android:textSize="20sp"
+                    app:layout_constraintStart_toEndOf="@+id/read_animal_number0"
+                    app:layout_constraintTop_toBottomOf="@id/read_basic_unit_data"
+                    tools:ignore="RtlCompat,UnknownId" />
+
+
+                <TextView
+                    android:id="@+id/read_animal_number0"
+                    android:layout_width="350dp"
+                    android:layout_height="25dp"
+                    android:layout_marginStart="20dp"
+                    android:layout_marginTop="16dp"
+                    android:layout_marginEnd="8dp"
+                    android:text="@string/read_total_animals"
+                    android:textSize="20sp"
+                    app:layout_constraintEnd_toEndOf="parent"
+                    app:layout_constraintHorizontal_bias="0.0"
+                    app:layout_constraintStart_toStartOf="parent"
+                    app:layout_constraintTop_toBottomOf="@id/read_age"
+                    tools:ignore="RtlCompat,UnknownId" />
+
+
+                <TextView
+                    android:id="@+id/read_animal_number"
+                    android:layout_width="350dp"
+                    android:layout_height="25dp"
+                    android:layout_marginStart="8dp"
+                    android:layout_marginTop="16dp"
+                    android:layout_marginEnd="8dp"
+                    android:textSize="20sp"
+                    app:layout_constraintEnd_toEndOf="parent"
+                    app:layout_constraintHorizontal_bias="1.0"
+                    app:layout_constraintStart_toEndOf="@+id/read_animal_number0"
+                    app:layout_constraintTop_toBottomOf="@id/read_age"
+                    tools:ignore="RtlCompat,UnknownId" />
+
+
+                <TextView
+                    android:id="@+id/read_sheep0"
+                    android:layout_width="350dp"
+                    android:layout_height="25dp"
+                    android:layout_marginStart="20dp"
+                    android:layout_marginTop="16dp"
+                    android:layout_marginEnd="8dp"
+                    android:text="@string/read_sheep"
+
+                    android:textSize="20sp"
+                    app:layout_constraintEnd_toEndOf="parent"
+                    app:layout_constraintHorizontal_bias="0.0"
+
+                    app:layout_constraintStart_toStartOf="parent"
+                    app:layout_constraintTop_toBottomOf="@+id/read_animal_number0"
+                    tools:ignore="RtlCompat,UnknownId" />
+
+                <TextView
+                    android:id="@+id/read_sheep"
+                    android:layout_width="350dp"
+                    android:layout_height="25dp"
+                    android:layout_marginStart="28dp"
+                    android:layout_marginTop="16dp"
+                    android:text=""
+                    android:textSize="20sp"
+
+                    app:layout_constraintStart_toEndOf="@+id/read_sheep0"
+                    app:layout_constraintTop_toBottomOf="@+id/read_animal_number"
+                    tools:ignore="RtlCompat,UnknownId" />
+
+                <TextView
+                    android:id="@+id/read_goats0"
+                    android:layout_width="350dp"
+                    android:layout_height="25dp"
+                    android:layout_marginStart="20dp"
+                    android:layout_marginTop="16dp"
+                    android:layout_marginEnd="8dp"
+                    android:text="@string/read_goats"
+                    android:textSize="20sp"
+                    app:layout_constraintEnd_toEndOf="parent"
+                    app:layout_constraintHorizontal_bias="0.0"
+                    app:layout_constraintStart_toStartOf="parent"
+                    app:layout_constraintTop_toBottomOf="@+id/read_sheep0"
+                    tools:ignore="RtlCompat,UnknownId" />
+
+
+                <TextView
+                    android:id="@+id/read_goats"
+                    android:layout_width="350dp"
+                    android:layout_height="25dp"
+                    android:layout_marginStart="8dp"
+                    android:layout_marginTop="16dp"
+                    android:layout_marginEnd="8dp"
+                    android:textSize="20sp"
+                    app:layout_constraintEnd_toEndOf="parent"
+                    app:layout_constraintHorizontal_bias="1.0"
+                    app:layout_constraintStart_toEndOf="@+id/read_goats0"
+                    app:layout_constraintTop_toBottomOf="@+id/read_sheep"
+                    tools:ignore="RtlCompat,UnknownId" />
+
+
+                <TextView
+                    android:id="@+id/read_milking0"
+                    android:layout_width="350dp"
+                    android:layout_height="25dp"
+                    android:layout_marginStart="20dp"
+                    android:layout_marginTop="16dp"
+                    android:text="@string/read_milking"
+                    android:textSize="20sp"
+                    app:layout_constraintStart_toStartOf="parent"
+                    app:layout_constraintTop_toBottomOf="@+id/read_goats0"
+                    tools:ignore="RtlCompat,UnknownId" />
+
+                <TextView
+                    android:id="@+id/read_milking"
+                    android:layout_width="350dp"
+                    android:layout_height="25dp"
+                    android:layout_marginStart="28dp"
+                    android:layout_marginTop="16dp"
+                    android:textSize="20sp"
+                    app:layout_constraintStart_toEndOf="@+id/read_milking0"
+                    app:layout_constraintTop_toBottomOf="@+id/read_goats"
+                    tools:ignore="RtlCompat,UnknownId" />
+
+
+                <TextView
+                    android:id="@+id/read_licensing0"
+                    android:layout_width="350dp"
+                    android:layout_height="25dp"
+                    android:layout_marginStart="20dp"
+                    android:layout_marginTop="16dp"
+                    android:layout_marginEnd="8dp"
+                    android:text="@string/read_licensing"
+                    android:textSize="20sp"
+                    app:layout_constraintEnd_toEndOf="parent"
+                    app:layout_constraintHorizontal_bias="0.0"
+                    app:layout_constraintStart_toStartOf="parent"
+                    app:layout_constraintTop_toBottomOf="@+id/read_milking0"
+                    tools:ignore="RtlCompat,UnknownId" />
+
+                <TextView
+                    android:id="@+id/read_licensing"
+                    android:layout_width="350dp"
+                    android:layout_height="25dp"
+                    android:layout_marginStart="16dp"
+                    android:layout_marginTop="16dp"
+                    android:layout_marginEnd="8dp"
+                    android:textSize="20sp"
+                    app:layout_constraintEnd_toEndOf="parent"
+                    app:layout_constraintHorizontal_bias="1.0"
+                    app:layout_constraintStart_toEndOf="@+id/read_licensing0"
+                    app:layout_constraintTop_toBottomOf="@+id/read_milking"
+                    tools:ignore="RtlCompat,UnknownId" />
+
+                <TextView
+                    android:id="@+id/read_electrification0"
+                    android:layout_width="350dp"
+                    android:layout_height="25dp"
+                    android:layout_marginStart="20dp"
+                    android:layout_marginTop="16dp"
+                    android:layout_marginEnd="8dp"
+                    android:text="@string/read_electrification"
+                    android:textSize="20sp"
+                    app:layout_constraintEnd_toEndOf="parent"
+                    app:layout_constraintHorizontal_bias="0.0"
+                    app:layout_constraintStart_toStartOf="parent"
+                    app:layout_constraintTop_toBottomOf="@id/read_licensing"
+                    tools:ignore="RtlCompat,UnknownId" />
+
+                <TextView
+                    android:id="@+id/read_electrification"
+                    android:layout_width="350dp"
+                    android:layout_height="25dp"
+                    android:layout_marginStart="16dp"
+                    android:layout_marginTop="16dp"
+                    android:layout_marginEnd="8dp"
+                    android:textSize="20sp"
+                    app:layout_constraintEnd_toEndOf="parent"
+                    app:layout_constraintHorizontal_bias="1.0"
+                    app:layout_constraintStart_toEndOf="@+id/read_electrification0"
+                    app:layout_constraintTop_toBottomOf="@id/read_licensing"
+                    tools:ignore="RtlCompat,UnknownId" />
+
+
+                <TextView
+                    android:id="@+id/read_tractor0"
+                    android:layout_width="350dp"
+                    android:layout_height="25dp"
+                    android:layout_marginStart="20dp"
+                    android:layout_marginTop="16dp"
+                    android:layout_marginEnd="8dp"
+                    android:text="@string/read_tractor"
+                    android:textSize="20sp"
+                    app:layout_constraintEnd_toEndOf="parent"
+                    app:layout_constraintHorizontal_bias="0.0"
+                    app:layout_constraintStart_toStartOf="parent"
+                    app:layout_constraintTop_toBottomOf="@id/read_electrification"
+                    tools:ignore="RtlCompat,UnknownId" />
+
+                <TextView
+                    android:id="@+id/read_tractor"
+                    android:layout_width="350dp"
+                    android:layout_height="25dp"
+                    android:layout_marginStart="20dp"
+                    android:layout_marginTop="16dp"
+                    android:layout_marginEnd="8dp"
+                    android:textSize="20sp"
+                    app:layout_constraintEnd_toEndOf="parent"
+                    app:layout_constraintHorizontal_bias="1.0"
+                    app:layout_constraintStart_toEndOf="@+id/read_tractor0"
+                    app:layout_constraintTop_toBottomOf="@id/read_electrification"
+                    tools:ignore="RtlCompat,UnknownId" />
+
+
+                <TextView
+                    android:id="@+id/read_sheepmilk0"
+                    android:layout_width="350dp"
+                    android:layout_height="25dp"
+                    android:layout_marginStart="20dp"
+                    android:layout_marginTop="16dp"
+                    android:layout_marginEnd="8dp"
+                    android:text="@string/read_sheepmilk"
+                    android:textSize="20sp"
+                    app:layout_constraintEnd_toEndOf="parent"
+                    app:layout_constraintHorizontal_bias="0.0"
+                    app:layout_constraintStart_toStartOf="parent"
+                    app:layout_constraintTop_toBottomOf="@+id/read_tractor0"
+                    tools:ignore="RtlCompat,UnknownId" />
+
+                <TextView
+                    android:id="@+id/read_sheepmilk"
+                    android:layout_width="350dp"
+                    android:layout_height="25dp"
+                    android:layout_marginStart="16dp"
+                    android:layout_marginTop="16dp"
+                    android:layout_marginEnd="8dp"
+                    android:textSize="20sp"
+                    app:layout_constraintEnd_toEndOf="parent"
+                    app:layout_constraintHorizontal_bias="0.994"
+                    app:layout_constraintStart_toEndOf="@+id/read_sheepmilk0"
+                    app:layout_constraintTop_toBottomOf="@id/read_tractor"
+                    tools:ignore="RtlCompat,UnknownId" />
+
+                <TextView
+                    android:id="@+id/read_goatmilk0"
+                    android:layout_width="350dp"
+                    android:layout_height="25dp"
+                    android:layout_marginStart="20dp"
+                    android:layout_marginTop="16dp"
+                    android:layout_marginEnd="8dp"
+                    android:text="@string/read_goatmilk"
+                    android:textSize="20sp"
+                    app:layout_constraintEnd_toEndOf="parent"
+                    app:layout_constraintHorizontal_bias="0.0"
+                    app:layout_constraintStart_toStartOf="parent"
+                    app:layout_constraintTop_toBottomOf="@id/read_sheepmilk"
+                    tools:ignore="RtlCompat,UnknownId" />
+
+                <TextView
+                    android:id="@+id/read_goatmilk"
+                    android:layout_width="350dp"
+                    android:layout_height="25dp"
+                    android:layout_marginStart="16dp"
+                    android:layout_marginTop="16dp"
+                    android:layout_marginEnd="8dp"
+                    android:text=""
+                    android:textSize="20sp"
+                    app:layout_constraintEnd_toEndOf="parent"
+                    app:layout_constraintHorizontal_bias="0.983"
+                    app:layout_constraintStart_toEndOf="@+id/read_goatmilk0"
+                    app:layout_constraintTop_toBottomOf="@id/read_sheepmilk"
+                    tools:ignore="RtlCompat,UnknownId" />
+
+
+                <TextView
+                    android:id="@+id/read_milk_per_sheep0"
+                    android:layout_width="350dp"
+                    android:layout_height="25dp"
+                    android:layout_marginStart="20dp"
+                    android:layout_marginTop="16dp"
+                    android:layout_marginEnd="8dp"
+                    android:text="@string/read_milk_per_sheep"
+                    android:textSize="20sp"
+                    app:layout_constraintEnd_toEndOf="parent"
+                    app:layout_constraintHorizontal_bias="0.0"
+                    app:layout_constraintStart_toStartOf="parent"
+                    app:layout_constraintTop_toBottomOf="@id/read_goatmilk"
+                    tools:ignore="RtlCompat,UnknownId" />
+
+                <TextView
+                    android:id="@+id/read_milk_per_sheep"
+                    android:layout_width="350dp"
+                    android:layout_height="25dp"
+                    android:layout_marginStart="8dp"
+                    android:layout_marginTop="16dp"
+                    android:layout_marginEnd="8dp"
+                    android:ems="10"
+                    android:textSize="20sp"
+
+                    app:layout_constraintEnd_toEndOf="parent"
+                    app:layout_constraintHorizontal_bias="1.0"
+                    app:layout_constraintStart_toEndOf="@+id/read_milk_per_sheep0"
+                    app:layout_constraintTop_toBottomOf="@id/read_goatmilk"
+                    tools:ignore="RtlCompat,UnknownId" />
+
+
+                <TextView
+                    android:id="@+id/txt_comment0"
+                    android:layout_width="350dp"
+                    android:layout_height="25dp"
+                    android:layout_marginStart="20dp"
+                    android:layout_marginTop="16dp"
+                    android:layout_marginEnd="8dp"
+                    android:text="@string/comment"
+                    android:textSize="20sp"
+                    app:layout_constraintEnd_toEndOf="parent"
+                    app:layout_constraintHorizontal_bias="0.0"
+                    app:layout_constraintStart_toStartOf="parent"
+                    app:layout_constraintTop_toBottomOf="@+id/read_milk_per_sheep0"
+                    tools:ignore="RtlCompat,UnknownId" />
+
+
+                <TextView
+                    android:id="@+id/txt_comment"
+                    android:layout_width="350dp"
+                    android:layout_height="25dp"
+                    android:layout_marginTop="16dp"
+                    android:textSize="20sp"
+                    app:layout_constraintEnd_toEndOf="parent"
+                    app:layout_constraintHorizontal_bias="0.756"
+                    app:layout_constraintStart_toEndOf="@+id/txt_comment0"
+                    app:layout_constraintTop_toBottomOf="@id/read_milk_per_sheep"
+                    tools:ignore="RtlCompat,UnknownId" />
+
+
+                <TextView
+                    android:id="@+id/read_annual_revenue"
+                    android:layout_width="180dp"
+                    android:layout_height="25dp"
+                    android:layout_marginStart="8dp"
+                    android:layout_marginTop="32dp"
+                    android:layout_marginEnd="8dp"
+                    android:text="@string/read_annual_revenue"
+                    android:textSize="20sp"
+                    app:layout_constraintEnd_toEndOf="parent"
+                    app:layout_constraintHorizontal_bias="0.54"
+                    app:layout_constraintStart_toStartOf="parent"
+                    app:layout_constraintTop_toBottomOf="@id/txt_comment" />
+
+
+                <TextView
+                    android:id="@+id/read_selling_sheep_milk0"
+                    android:layout_width="350dp"
+                    android:layout_height="25dp"
+                    android:layout_marginStart="20dp"
+                    android:layout_marginTop="16dp"
+                    android:layout_marginEnd="8dp"
+                    android:text="@string/read_selling_sheep_milk"
+                    android:textSize="20sp"
+                    app:layout_constraintStart_toStartOf="parent"
+                    app:layout_constraintTop_toBottomOf="@+id/read_annual_revenue"
+                    tools:ignore="RtlCompat,UnknownId" />
+
+
+                <TextView
+                    android:id="@+id/read_selling_sheep_milk"
+                    android:layout_width="350dp"
+                    android:layout_height="25dp"
+                    android:layout_marginStart="28dp"
+                    android:layout_marginTop="16dp"
+                    android:text=""
+                    android:textSize="20sp"
+                    app:layout_constraintStart_toEndOf="@+id/read_selling_sheep_milk0"
+                    app:layout_constraintTop_toBottomOf="@+id/read_annual_revenue"
+                    tools:ignore="RtlCompat,UnknownId" />
+
+                <TextView
+                    android:id="@+id/read_selling_goat_milk0"
+                    android:layout_width="350dp"
+                    android:layout_height="25dp"
+                    android:layout_marginStart="20dp"
+                    android:layout_marginTop="16dp"
+                    android:layout_marginEnd="8dp"
+                    android:text="@string/read_selling_goat_milk"
+                    android:textSize="20sp"
+                    app:layout_constraintStart_toStartOf="parent"
+                    app:layout_constraintTop_toBottomOf="@+id/read_selling_sheep_milk0"
+                    tools:ignore="RtlCompat,UnknownId" />
+
+
+                <TextView
+                    android:id="@+id/read_selling_goat_milk"
+                    android:layout_width="350dp"
+                    android:layout_height="25dp"
+                    android:layout_marginStart="28dp"
+                    android:layout_marginTop="16dp"
+                    android:text=""
+                    android:textSize="20sp"
+                    app:layout_constraintStart_toEndOf="@+id/read_selling_goat_milk0"
+                    app:layout_constraintTop_toBottomOf="@+id/read_selling_sheep_milk"
+                    tools:ignore="RtlCompat,UnknownId" />
+
+
+                <TextView
+                    android:id="@+id/read_selling_meat0"
+                    android:layout_width="350dp"
+                    android:layout_height="25dp"
+                    android:layout_marginStart="20dp"
+                    android:layout_marginTop="16dp"
+                    android:layout_marginEnd="8dp"
+                    android:text="@string/read_selling_meat"
+                    android:textSize="20sp"
+                    app:layout_constraintStart_toStartOf="parent"
+                    app:layout_constraintTop_toBottomOf="@+id/read_selling_goat_milk0"
+                    tools:ignore="RtlCompat,UnknownId" />
+
+
+                <TextView
+                    android:id="@+id/read_selling_meat"
+                    android:layout_width="350dp"
+                    android:layout_height="25dp"
+                    android:layout_marginStart="28dp"
+                    android:layout_marginTop="16dp"
+                    android:text=""
+                    android:textSize="20sp"
+                    app:layout_constraintStart_toEndOf="@+id/read_selling_meat0"
+                    app:layout_constraintTop_toBottomOf="@+id/read_selling_goat_milk"
+                    tools:ignore="RtlCompat,UnknownId" />
+
+
+                <TextView
+                    android:id="@+id/read_subsidies0"
+                    android:layout_width="350dp"
+                    android:layout_height="25dp"
+                    android:layout_marginStart="20dp"
+                    android:layout_marginTop="16dp"
+                    android:layout_marginEnd="8dp"
+                    android:text="@string/read_subsidies"
+                    android:textSize="20sp"
+                    app:layout_constraintStart_toStartOf="parent"
+                    app:layout_constraintTop_toBottomOf="@+id/read_selling_meat0"
+                    tools:ignore="RtlCompat,UnknownId" />
+
+
+                <TextView
+                    android:id="@+id/read_subsidies"
+                    android:layout_width="350dp"
+                    android:layout_height="25dp"
+                    android:layout_marginStart="28dp"
+                    android:layout_marginTop="16dp"
+                    android:text=""
+                    android:textSize="20sp"
+                    app:layout_constraintStart_toEndOf="@+id/read_subsidies0"
+                    app:layout_constraintTop_toBottomOf="@+id/read_selling_meat"
+                    tools:ignore="RtlCompat,UnknownId" />
+
+
+                <TextView
+                    android:id="@+id/read_female0"
+                    android:layout_width="350dp"
+                    android:layout_height="25dp"
+                    android:layout_marginStart="20dp"
+                    android:layout_marginTop="16dp"
+                    android:layout_marginEnd="8dp"
+                    android:text="@string/read_female"
+                    android:textSize="20sp"
+                    app:layout_constraintStart_toStartOf="parent"
+                    app:layout_constraintTop_toBottomOf="@+id/read_subsidies0"
+                    tools:ignore="RtlCompat,UnknownId" />
+
+
+                <TextView
+                    android:id="@+id/read_female"
+                    android:layout_width="350dp"
+                    android:layout_height="25dp"
+                    android:layout_marginStart="28dp"
+                    android:layout_marginTop="16dp"
+                    android:text=""
+                    android:textSize="20sp"
+                    app:layout_constraintStart_toEndOf="@+id/read_female0"
+                    app:layout_constraintTop_toBottomOf="@+id/read_subsidies"
+                    tools:ignore="RtlCompat,UnknownId" />
+
+
+                <TextView
+                    android:id="@+id/read_manure0"
+                    android:layout_width="350dp"
+                    android:layout_height="25dp"
+                    android:layout_marginStart="20dp"
+                    android:layout_marginTop="16dp"
+                    android:layout_marginEnd="8dp"
+                    android:text="@string/read_manure"
+                    android:textSize="20sp"
+                    app:layout_constraintStart_toStartOf="parent"
+                    app:layout_constraintTop_toBottomOf="@+id/read_female0"
+                    tools:ignore="RtlCompat,UnknownId" />
+
+
+                <TextView
+                    android:id="@+id/read_manure"
+                    android:layout_width="350dp"
+                    android:layout_height="25dp"
+                    android:layout_marginStart="28dp"
+                    android:layout_marginTop="16dp"
+                    android:text=""
+                    android:textSize="20sp"
+                    app:layout_constraintStart_toEndOf="@+id/read_manure0"
+                    app:layout_constraintTop_toBottomOf="@+id/read_female"
+                    tools:ignore="RtlCompat,UnknownId" />
+
+
+                <TextView
+                    android:id="@+id/read_black0"
+                    android:layout_width="350dp"
+                    android:layout_height="25dp"
+                    android:layout_marginStart="20dp"
+                    android:layout_marginTop="16dp"
+                    android:layout_marginEnd="8dp"
+                    android:text="@string/read_black"
+                    android:textSize="20sp"
+                    app:layout_constraintStart_toStartOf="parent"
+                    app:layout_constraintTop_toBottomOf="@+id/read_manure0"
+                    tools:ignore="RtlCompat,UnknownId" />
+
+
+                <TextView
+                    android:id="@+id/read_black"
+                    android:layout_width="350dp"
+                    android:layout_height="25dp"
+                    android:layout_marginStart="28dp"
+                    android:layout_marginTop="16dp"
+                    android:text=""
+                    android:textSize="20sp"
+                    app:layout_constraintStart_toEndOf="@+id/read_black0"
+                    app:layout_constraintTop_toBottomOf="@+id/read_manure"
+                    tools:ignore="RtlCompat,UnknownId" />
+
+
+                <TextView
+                    android:id="@+id/read_other_income0"
+                    android:layout_width="350dp"
+                    android:layout_height="25dp"
+                    android:layout_marginStart="20dp"
+                    android:layout_marginTop="16dp"
+                    android:layout_marginEnd="8dp"
+                    android:text="@string/read_other_income"
+                    android:textSize="20sp"
+                    app:layout_constraintStart_toStartOf="parent"
+                    app:layout_constraintTop_toBottomOf="@+id/read_black0"
+                    tools:ignore="RtlCompat,UnknownId" />
+
+
+                <TextView
+                    android:id="@+id/read_other_income"
+                    android:layout_width="350dp"
+                    android:layout_height="25dp"
+                    android:layout_marginStart="28dp"
+                    android:layout_marginTop="16dp"
+                    android:layout_marginEnd="8dp"
+                    android:text=""
+                    android:textSize="20sp"
+                    app:layout_constraintStart_toEndOf="@+id/read_other_income0"
+                    app:layout_constraintTop_toBottomOf="@+id/read_black"
+                    tools:ignore="RtlCompat,UnknownId" />
+
+
+                <TextView
+                    android:id="@+id/read_annual_costs"
+                    android:layout_width="180dp"
+                    android:layout_height="25dp"
+                    android:layout_marginStart="316dp"
+                    android:layout_marginTop="36dp"
+                    android:text="@string/read_annual_costs"
+                    android:textSize="20sp"
+                    app:layout_constraintStart_toStartOf="parent"
+                    app:layout_constraintTop_toBottomOf="@+id/read_other_income0" />
+
+
+                <TextView
+                    android:id="@+id/read_concentrated_fodder0"
+                    android:layout_width="350dp"
+                    android:layout_height="25dp"
+                    android:layout_marginStart="20dp"
+                    android:layout_marginTop="16dp"
+                    android:layout_marginEnd="8dp"
+                    android:text="@string/read_concentrated_fodder"
+                    android:textSize="20sp"
+                    app:layout_constraintStart_toStartOf="parent"
+                    app:layout_constraintTop_toBottomOf="@+id/read_annual_costs"
+                    tools:ignore="RtlCompat,UnknownId" />
+
+
+                <TextView
+                    android:id="@+id/read_concentrated_fodder"
+                    android:layout_width="350dp"
+                    android:layout_height="25dp"
+                    android:layout_marginStart="28dp"
+                    android:layout_marginTop="16dp"
+                    android:text=""
+                    android:textSize="20sp"
+                    app:layout_constraintStart_toEndOf="@+id/read_concentrated_fodder0"
+                    app:layout_constraintTop_toBottomOf="@+id/read_annual_costs"
+                    tools:ignore="RtlCompat,UnknownId" />
+
+                <TextView
+                    android:id="@+id/read_trefoil0"
+                    android:layout_width="350dp"
+                    android:layout_height="25dp"
+                    android:layout_marginStart="20dp"
+                    android:layout_marginTop="16dp"
+                    android:layout_marginEnd="8dp"
+                    android:text="@string/read_trefoil"
+                    android:textSize="20sp"
+                    app:layout_constraintStart_toStartOf="parent"
+                    app:layout_constraintTop_toBottomOf="@+id/read_concentrated_fodder0"
+                    tools:ignore="RtlCompat,UnknownId" />
+
+
+                <TextView
+                    android:id="@+id/read_trefoil"
+                    android:layout_width="350dp"
+                    android:layout_height="25dp"
+                    android:layout_marginStart="28dp"
+                    android:layout_marginTop="16dp"
+                    android:text=""
+                    android:textSize="20sp"
+                    app:layout_constraintStart_toEndOf="@+id/read_trefoil0"
+                    app:layout_constraintTop_toBottomOf="@+id/read_concentrated_fodder"
+                    tools:ignore="RtlCompat,UnknownId" />
+
+
+                <TextView
+                    android:id="@+id/read_hay0"
+                    android:layout_width="350dp"
+                    android:layout_height="25dp"
+                    android:layout_marginStart="20dp"
+                    android:layout_marginTop="16dp"
+                    android:layout_marginEnd="8dp"
+                    android:text="@string/read_hay"
+                    android:textSize="20sp"
+                    app:layout_constraintStart_toStartOf="parent"
+                    app:layout_constraintTop_toBottomOf="@+id/read_trefoil0"
+                    tools:ignore="RtlCompat,UnknownId" />
+
+
+                <TextView
+                    android:id="@+id/read_hay"
+                    android:layout_width="350dp"
+                    android:layout_height="25dp"
+                    android:layout_marginStart="28dp"
+                    android:layout_marginTop="16dp"
+                    android:layout_marginEnd="8dp"
+                    android:text=""
+                    android:textSize="20sp"
+                    app:layout_constraintStart_toEndOf="@+id/read_hay0"
+                    app:layout_constraintTop_toBottomOf="@+id/read_trefoil"
+                    tools:ignore="RtlCompat,UnknownId" />
+
+
+                <TextView
+                    android:id="@+id/read_electricity0"
+                    android:layout_width="350dp"
+                    android:layout_height="25dp"
+                    android:layout_marginStart="20dp"
+                    android:layout_marginTop="16dp"
+                    android:layout_marginEnd="8dp"
+                    android:text="@string/read_electricity"
+                    android:textSize="20sp"
+                    app:layout_constraintStart_toStartOf="parent"
+                    app:layout_constraintTop_toBottomOf="@+id/read_hay0"
+                    tools:ignore="RtlCompat,UnknownId" />
+
+
+                <TextView
+                    android:id="@+id/read_electricity"
+                    android:layout_width="350dp"
+                    android:layout_height="25dp"
+                    android:layout_marginStart="28dp"
+                    android:layout_marginTop="16dp"
+                    android:layout_marginEnd="8dp"
+                    android:text=""
+                    android:textSize="20sp"
+                    app:layout_constraintStart_toEndOf="@+id/read_electricity0"
+                    app:layout_constraintTop_toBottomOf="@+id/read_hay"
+                    tools:ignore="RtlCompat,UnknownId" />
+
+
+                <TextView
+                    android:id="@+id/read_replacement_animals0"
+                    android:layout_width="350dp"
+                    android:layout_height="25dp"
+                    android:layout_marginStart="20dp"
+                    android:layout_marginTop="16dp"
+                    android:layout_marginEnd="8dp"
+                    android:text="@string/read_replacement_animals"
+                    android:textSize="20sp"
+                    app:layout_constraintStart_toStartOf="parent"
+                    app:layout_constraintTop_toBottomOf="@+id/read_electricity0"
+                    tools:ignore="RtlCompat,UnknownId" />
+
+
+                <TextView
+                    android:id="@+id/read_replacement_animals"
+                    android:layout_width="350dp"
+                    android:layout_height="25dp"
+                    android:layout_marginStart="28dp"
+                    android:layout_marginTop="16dp"
+                    android:layout_marginEnd="8dp"
+                    android:text=""
+                    android:textSize="20sp"
+                    app:layout_constraintStart_toEndOf="@+id/read_replacement_animals0"
+                    app:layout_constraintTop_toBottomOf="@+id/read_electricity"
+                    tools:ignore="RtlCompat,UnknownId" />
+
+
+                <TextView
+                    android:id="@+id/read_petroleum0"
+                    android:layout_width="350dp"
+                    android:layout_height="25dp"
+                    android:layout_marginStart="20dp"
+                    android:layout_marginTop="16dp"
+                    android:layout_marginEnd="8dp"
+                    android:text="@string/read_petroleum"
+                    android:textSize="20sp"
+                    app:layout_constraintStart_toStartOf="parent"
+                    app:layout_constraintTop_toBottomOf="@+id/read_replacement_animals0"
+                    tools:ignore="RtlCompat,UnknownId" />
+
+
+                <TextView
+                    android:id="@+id/read_petroleum"
+                    android:layout_width="350dp"
+                    android:layout_height="25dp"
+                    android:layout_marginStart="28dp"
+                    android:layout_marginTop="16dp"
+                    android:layout_marginEnd="8dp"
+                    android:text=""
+                    android:textSize="20sp"
+                    app:layout_constraintStart_toEndOf="@+id/read_petroleum0"
+                    app:layout_constraintTop_toBottomOf="@+id/read_replacement_animals"
+                    tools:ignore="RtlCompat,UnknownId" />
+
+
+                <TextView
+                    android:id="@+id/read_petrol0"
+                    android:layout_width="350dp"
+                    android:layout_height="25dp"
+                    android:layout_marginStart="20dp"
+                    android:layout_marginTop="16dp"
+                    android:layout_marginEnd="8dp"
+                    android:text="@string/read_petrol"
+                    android:textSize="20sp"
+                    app:layout_constraintStart_toStartOf="parent"
+                    app:layout_constraintTop_toBottomOf="@+id/read_petroleum0"
+                    tools:ignore="RtlCompat,UnknownId" />
+
+
+                <TextView
+                    android:id="@+id/read_petrol"
+                    android:layout_width="350dp"
+                    android:layout_height="25dp"
+                    android:layout_marginStart="28dp"
+                    android:layout_marginTop="16dp"
+                    android:layout_marginEnd="8dp"
+                    android:text=""
+                    android:textSize="20sp"
+                    app:layout_constraintStart_toEndOf="@+id/read_petrol0"
+                    app:layout_constraintTop_toBottomOf="@+id/read_petroleum"
+                    tools:ignore="RtlCompat,UnknownId" />
+
+
+                <TextView
+                    android:id="@+id/read_medicines0"
+                    android:layout_width="350dp"
+                    android:layout_height="25dp"
+                    android:layout_marginStart="20dp"
+                    android:layout_marginTop="16dp"
+                    android:layout_marginEnd="8dp"
+                    android:text="@string/read_medicines"
+                    android:textSize="20sp"
+                    app:layout_constraintStart_toStartOf="parent"
+                    app:layout_constraintTop_toBottomOf="@+id/read_petrol0"
+                    tools:ignore="RtlCompat,UnknownId" />
+
+
+                <TextView
+                    android:id="@+id/read_medicines"
+                    android:layout_width="350dp"
+                    android:layout_height="25dp"
+                    android:layout_marginStart="28dp"
+                    android:layout_marginTop="16dp"
+                    android:layout_marginEnd="8dp"
+                    android:text=""
+                    android:textSize="20sp"
+                    app:layout_constraintStart_toEndOf="@+id/read_medicines0"
+                    app:layout_constraintTop_toBottomOf="@+id/read_petrol"
+                    tools:ignore="RtlCompat,UnknownId" />
+
+
+                <TextView
+                    android:id="@+id/read_sponges0"
+                    android:layout_width="350dp"
+                    android:layout_height="25dp"
+                    android:layout_marginStart="20dp"
+                    android:layout_marginTop="16dp"
+                    android:layout_marginEnd="8dp"
+                    android:text="@string/read_sponges"
+                    android:textSize="20sp"
+                    app:layout_constraintStart_toStartOf="parent"
+                    app:layout_constraintTop_toBottomOf="@+id/read_medicines0"
+                    tools:ignore="RtlCompat,UnknownId" />
+
+
+                <TextView
+                    android:id="@+id/read_sponges"
+                    android:layout_width="350dp"
+                    android:layout_height="25dp"
+                    android:layout_marginStart="28dp"
+                    android:layout_marginTop="16dp"
+                    android:layout_marginEnd="8dp"
+                    android:text=""
+                    android:textSize="20sp"
+                    app:layout_constraintStart_toEndOf="@+id/read_sponges0"
+                    app:layout_constraintTop_toBottomOf="@+id/read_medicines"
+                    tools:ignore="RtlCompat,UnknownId" />
+
+                <TextView
+                    android:id="@+id/read_repair0"
+                    android:layout_width="350dp"
+                    android:layout_height="25dp"
+                    android:layout_marginStart="20dp"
+                    android:layout_marginTop="16dp"
+                    android:layout_marginEnd="8dp"
+                    android:text="@string/read_repair"
+                    android:textSize="20sp"
+                    app:layout_constraintStart_toStartOf="parent"
+                    app:layout_constraintTop_toBottomOf="@+id/read_sponges0"
+                    tools:ignore="RtlCompat,UnknownId" />
+
+
+                <TextView
+                    android:id="@+id/read_repair"
+                    android:layout_width="350dp"
+                    android:layout_height="25dp"
+                    android:layout_marginStart="28dp"
+                    android:layout_marginTop="16dp"
+                    android:layout_marginEnd="8dp"
+                    android:text=""
+                    android:textSize="20sp"
+                    app:layout_constraintStart_toEndOf="@+id/read_repair0"
+                    app:layout_constraintTop_toBottomOf="@+id/read_sponges"
+                    tools:ignore="RtlCompat,UnknownId" />
+
+
+                <TextView
+                    android:id="@+id/read_equipment0"
+                    android:layout_width="350dp"
+                    android:layout_height="25dp"
+                    android:layout_marginStart="20dp"
+                    android:layout_marginTop="16dp"
+                    android:layout_marginEnd="8dp"
+                    android:text="@string/read_equipment"
+                    android:textSize="20sp"
+                    app:layout_constraintStart_toStartOf="parent"
+                    app:layout_constraintTop_toBottomOf="@+id/read_repair0"
+                    tools:ignore="RtlCompat,UnknownId" />
+
+
+                <TextView
+                    android:id="@+id/read_equipment"
+                    android:layout_width="350dp"
+                    android:layout_height="25dp"
+                    android:layout_marginStart="28dp"
+                    android:layout_marginTop="16dp"
+                    android:layout_marginEnd="8dp"
+                    android:text=""
+                    android:textSize="20sp"
+                    app:layout_constraintStart_toEndOf="@+id/read_equipment0"
+                    app:layout_constraintTop_toBottomOf="@+id/read_repair"
+                    tools:ignore="RtlCompat,UnknownId" />
+
+
+                <TextView
+                    android:id="@+id/read_WAGES_FIELDS0"
+                    android:layout_width="350dp"
+                    android:layout_height="25dp"
+                    android:layout_marginStart="20dp"
+                    android:layout_marginTop="16dp"
+                    android:layout_marginEnd="8dp"
+                    android:text="@string/read_WAGES_FIELDS"
+                    android:textSize="20sp"
+                    app:layout_constraintStart_toStartOf="parent"
+                    app:layout_constraintTop_toBottomOf="@+id/read_equipment0"
+                    tools:ignore="RtlCompat,UnknownId" />
+
+
+                <TextView
+                    android:id="@+id/read_WAGES_FIELDS"
+                    android:layout_width="350dp"
+                    android:layout_height="25dp"
+                    android:layout_marginStart="28dp"
+                    android:layout_marginTop="16dp"
+                    android:layout_marginEnd="8dp"
+                    android:text=""
+                    android:textSize="20sp"
+                    app:layout_constraintStart_toEndOf="@+id/read_WAGES_FIELDS0"
+                    app:layout_constraintTop_toBottomOf="@+id/read_equipment"
+                    tools:ignore="RtlCompat,UnknownId" />
+
+
+                <TextView
+                    android:id="@+id/read_WAGES_STAFF0"
+                    android:layout_width="350dp"
+                    android:layout_height="25dp"
+                    android:layout_marginStart="20dp"
+                    android:layout_marginTop="16dp"
+                    android:layout_marginEnd="8dp"
+                    android:text="@string/read_WAGES_STAFF"
+                    android:textSize="20sp"
+                    app:layout_constraintStart_toStartOf="parent"
+                    app:layout_constraintTop_toBottomOf="@+id/read_WAGES_FIELDS0"
+                    tools:ignore="RtlCompat,UnknownId" />
+
+
+                <TextView
+                    android:id="@+id/read_WAGES_STAFF"
+                    android:layout_width="350dp"
+                    android:layout_height="25dp"
+                    android:layout_marginStart="28dp"
+                    android:layout_marginTop="16dp"
+                    android:layout_marginEnd="8dp"
+                    android:text=""
+                    android:textSize="20sp"
+                    app:layout_constraintStart_toEndOf="@+id/read_WAGES_STAFF0"
+                    app:layout_constraintTop_toBottomOf="@+id/read_WAGES_FIELDS"
+                    tools:ignore="RtlCompat,UnknownId" />
+
+
+                <TextView
+                    android:id="@+id/read_EXPENSES_PASTURES0"
+                    android:layout_width="350dp"
+                    android:layout_height="25dp"
+                    android:layout_marginStart="20dp"
+                    android:layout_marginTop="16dp"
+                    android:layout_marginEnd="8dp"
+                    android:text="@string/read_EXPENSES_PASTURES"
+                    android:textSize="20sp"
+                    app:layout_constraintStart_toStartOf="parent"
+                    app:layout_constraintTop_toBottomOf="@+id/read_WAGES_STAFF0"
+                    tools:ignore="RtlCompat,UnknownId" />
+
+
+                <TextView
+                    android:id="@+id/read_EXPENSES_PASTURES"
+                    android:layout_width="350dp"
+                    android:layout_height="25dp"
+                    android:layout_marginStart="28dp"
+                    android:layout_marginTop="16dp"
+                    android:layout_marginEnd="8dp"
+                    android:text=""
+                    android:textSize="20sp"
+                    app:layout_constraintStart_toEndOf="@+id/read_EXPENSES_PASTURES0"
+                    app:layout_constraintTop_toBottomOf="@+id/read_WAGES_STAFF"
+                    tools:ignore="RtlCompat,UnknownId" />
+
+
+                <TextView
+                    android:id="@+id/read_other_expenses0"
+                    android:layout_width="350dp"
+                    android:layout_height="25dp"
+                    android:layout_marginStart="20dp"
+                    android:layout_marginTop="16dp"
+                    android:layout_marginEnd="8dp"
+                    android:text="@string/read_other_expenses"
+                    android:textSize="20sp"
+                    app:layout_constraintStart_toStartOf="parent"
+                    app:layout_constraintTop_toBottomOf="@+id/read_EXPENSES_PASTURES0"
+                    tools:ignore="RtlCompat,UnknownId" />
+
+
+                <TextView
+                    android:id="@+id/read_other_expenses"
+                    android:layout_width="350dp"
+                    android:layout_height="25dp"
+                    android:layout_marginStart="28dp"
+                    android:layout_marginTop="16dp"
+                    android:layout_marginEnd="8dp"
+                    android:text=""
+                    android:textSize="20sp"
+                    app:layout_constraintStart_toEndOf="@+id/read_other_expenses0"
+                    app:layout_constraintTop_toBottomOf="@+id/read_EXPENSES_PASTURES"
+                    tools:ignore="RtlCompat,UnknownId" />
+
+
+                <TextView
+                    android:id="@+id/read_total_revenue0"
+                    android:layout_width="350dp"
+                    android:layout_height="25dp"
+                    android:layout_marginStart="20dp"
+                    android:layout_marginTop="60dp"
+                    android:layout_marginEnd="8dp"
+                    android:text="@string/read_total_revenue"
+                    android:textSize="20sp"
+                    app:layout_constraintStart_toStartOf="parent"
+                    app:layout_constraintTop_toBottomOf="@+id/read_other_expenses0"
+                    tools:ignore="RtlCompat,UnknownId" />
+
+
+                <TextView
+                    android:id="@+id/read_total_revenue"
+                    android:layout_width="350dp"
+                    android:layout_height="25dp"
+                    android:layout_marginStart="28dp"
+                    android:layout_marginTop="60dp"
+                    android:text=""
+                    android:textSize="20sp"
+                    app:layout_constraintStart_toEndOf="@+id/read_total_revenue0"
+                    app:layout_constraintTop_toBottomOf="@+id/read_other_expenses"
+                    tools:ignore="RtlCompat,UnknownId" />
+
+
+                <TextView
+                    android:id="@+id/read_total_expenses0"
+                    android:layout_width="350dp"
+                    android:layout_height="25dp"
+                    android:layout_marginStart="20dp"
+                    android:layout_marginTop="16dp"
+                    android:layout_marginEnd="8dp"
+                    android:text="@string/read_total_expenses"
+                    android:textSize="20sp"
+                    app:layout_constraintStart_toStartOf="parent"
+                    app:layout_constraintTop_toBottomOf="@+id/read_total_revenue0"
+                    tools:ignore="RtlCompat,UnknownId" />
+
+
+                <TextView
+                    android:id="@+id/read_total_expenses"
+                    android:layout_width="350dp"
+                    android:layout_height="25dp"
+                    android:layout_marginStart="28dp"
+                    android:layout_marginTop="16dp"
+                    android:layout_marginEnd="8dp"
+                    android:text=""
+                    android:textSize="20sp"
+                    app:layout_constraintStart_toEndOf="@+id/read_total_expenses0"
+                    app:layout_constraintTop_toBottomOf="@+id/read_total_revenue"
+                    tools:ignore="RtlCompat,UnknownId" />
+
+
+                <TextView
+                    android:id="@+id/read_mixed_revenue0"
+                    android:layout_width="350dp"
+                    android:layout_height="25dp"
+                    android:layout_marginStart="20dp"
+                    android:layout_marginTop="16dp"
+                    android:layout_marginEnd="8dp"
+                    android:text="@string/read_mixed_revenue"
+                    android:textSize="20sp"
+                    app:layout_constraintStart_toStartOf="parent"
+                    app:layout_constraintTop_toBottomOf="@+id/read_total_expenses0"
+                    tools:ignore="RtlCompat,UnknownId" />
+
+
+                <TextView
+                    android:id="@+id/read_mixed_revenue"
+                    android:layout_width="350dp"
+                    android:layout_height="25dp"
+                    android:layout_marginStart="28dp"
+                    android:layout_marginTop="16dp"
+                    android:layout_marginBottom="20dp"
+                    android:text=""
+                    android:textSize="20sp"
+                    app:layout_constraintBottom_toBottomOf="parent"
+                    app:layout_constraintStart_toEndOf="@+id/read_mixed_revenue0"
+                    app:layout_constraintTop_toBottomOf="@+id/read_total_expenses"
+                    tools:ignore="RtlCompat,UnknownId" />
+
+
+            </android.support.constraint.ConstraintLayout>
+
+        </HorizontalScrollView>
+
+    </android.support.v4.widget.NestedScrollView>
+
+</LinearLayout>
